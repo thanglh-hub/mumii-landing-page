@@ -557,7 +557,7 @@ function Home() {
           <h2 className="text-5xl sm:text-6xl font-black mb-6 text-white" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
             SẴN SÀNG BẮT ĐẦU?
           </h2>
-          <p className="text-2xl font-bold mb-8 text-white whitespace-nowrap">
+            <p className="text-2xl font-bold mb-8 text-white">
             Tải xuống ngay và tham gia cuộc cách mạng. Hiện có sẵn trên Android, iOS sắp ra mắt.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -606,7 +606,7 @@ function Home() {
             </p>
               </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Facebook Card */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
               <div className="flex items-center gap-4 mb-6">

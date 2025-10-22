@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="bg-black text-white border-t-4 border-black py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-5 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xl font-black">MUMII</span>
@@ -34,6 +34,13 @@ function Footer() {
               <li><a href="/#contact" className="hover:underline">Liên hệ</a></li>
               <li><a href="#" className="hover:underline">Chính sách và điều khoản</a></li>
             </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-black mb-4">KẾT NỐI VỚI CHÚNG TÔI</h4>
+            <div className="flex flex-col gap-2 font-bold">
+              <a href="https://www.facebook.com/app.mumii" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a>
+              <a href="https://www.threads.com/@formumii_corp" target="_blank" rel="noopener noreferrer" className="hover:underline">Threads</a>
+            </div>
           </div>
         </div>
         <div className="border-t-2 border-white pt-8 text-center font-bold">
