@@ -1,4 +1,4 @@
-import { Smartphone, Zap, Shield, Star, Download, Check, Mail, Phone, MapPin, X } from 'lucide-react';
+import { Smartphone, Download, Check, Mail, Phone, MapPin, X, Utensils, ChefHat, Coffee, Pizza, Heart } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 
@@ -55,13 +55,13 @@ function Home() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-none mb-6">
-              ỨNG DỤNG
+              KHÁM PHÁ
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500" style={{ WebkitTextStroke: '2px black' }}>
-                ĐỈNH CAO
+                ẨM THỰC
               </span>
             </h1>
             <p className="text-xl sm:text-2xl font-bold mb-8 max-w-xl">
-              Trải nghiệm di động mạnh mẽ nhất phá vỡ mọi giới hạn. Nhanh chóng, bảo mật và hoàn toàn vượt trội.
+              Trải nghiệm ẩm thực độc đáo qua màu sắc và AI. Khám phá quán ăn, chia sẻ công thức và kết nối với cộng đồng yêu ẩm thực.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-pink-500 text-white text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center gap-2">
@@ -75,13 +75,29 @@ function Home() {
           </div>
 
           <div className="relative">
-            <div className="bg-cyan-400 border-4 border-black p-8 shadow-[16px_16px_0px_0px_rgba(0,0,0,1)]">
+            <div className="bg-gradient-to-br from-orange-400 to-red-500 border-4 border-black p-8 shadow-[16px_16px_0px_0px_rgba(0,0,0,1)]">
               <div className="bg-white border-4 border-black p-4">
-                <Smartphone className="w-full h-96" strokeWidth={2} />
+                <div className="grid grid-cols-2 gap-4 h-96">
+                  <div className="bg-pink-200 border-2 border-black p-3 flex items-center justify-center">
+                    <Pizza className="w-16 h-16 text-red-600" strokeWidth={2} />
+                  </div>
+                  <div className="bg-yellow-200 border-2 border-black p-3 flex items-center justify-center">
+                    <Coffee className="w-16 h-16 text-amber-700" strokeWidth={2} />
+                  </div>
+                  <div className="bg-green-200 border-2 border-black p-3 flex items-center justify-center">
+                    <Utensils className="w-16 h-16 text-green-700" strokeWidth={2} />
+                  </div>
+                  <div className="bg-purple-200 border-2 border-black p-3 flex items-center justify-center">
+                    <ChefHat className="w-16 h-16 text-purple-700" strokeWidth={2} />
+                  </div>
+                </div>
               </div>
             </div>
             <div className="absolute -top-6 -right-6 bg-yellow-400 border-4 border-black px-6 py-3 rotate-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <p className="font-black text-2xl">MỚI!</p>
+              <p className="font-black text-2xl">NGON!</p>
+            </div>
+            <div className="absolute -bottom-4 -left-4 bg-pink-500 border-4 border-black px-4 py-2 -rotate-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+              <p className="font-black text-white text-sm">AI POWERED</p>
             </div>
           </div>
         </div>
@@ -91,37 +107,37 @@ function Home() {
       <section id="features" className="bg-lime-300 border-y-4 border-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-5xl sm:text-6xl font-black text-center mb-16">
-            TẠI SAO CHỌN CHÚNG TÔI?
+            TẠI SAO CHỌN MUMII?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
               <div className="bg-pink-500 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
-                <Zap className="w-8 h-8" strokeWidth={3} />
+                <Utensils className="w-8 h-8" strokeWidth={3} />
               </div>
-              <h3 className="text-3xl font-black mb-4">CỰC KỲ NHANH</h3>
+              <h3 className="text-3xl font-black mb-4">AI MÀU SẮC</h3>
               <p className="text-lg font-bold">
-                Trải nghiệm tốc độ vượt trội bỏ xa đối thủ. Được tối ưu hóa cho hiệu suất tốt nhất.
+                Trắc nghiệm màu sắc thông minh để tìm món ăn phù hợp với tâm trạng và sở thích của bạn.
               </p>
             </div>
 
             <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
               <div className="bg-cyan-400 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
-                <Shield className="w-8 h-8" strokeWidth={3} />
+                <ChefHat className="w-8 h-8" strokeWidth={3} />
               </div>
-              <h3 className="text-3xl font-black mb-4">SIÊU BẢO MẬT</h3>
+              <h3 className="text-3xl font-black mb-4">CỘNG ĐỒNG ĐẦU BẾP</h3>
               <p className="text-lg font-bold">
-                Mã hóa cấp ngân hàng giữ an toàn dữ liệu của bạn. Quyền riêng tư được đảm bảo tuyệt đối.
+                Chia sẻ công thức, video nấu ăn và kết nối với cộng đồng yêu ẩm thực khắp nơi.
               </p>
             </div>
 
             <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-yellow-400 border-4 border-black w-16 h-16 flex itemsCenter justify-center mb-6">
-                <Star className="w-8 h-8" strokeWidth={3} />
+              <div className="bg-yellow-400 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
+                <Heart className="w-8 h-8" strokeWidth={3} />
               </div>
-              <h3 className="text-3xl font-black mb-4">ĐÁNH GIÁ 5 SAO</h3>
+              <h3 className="text-3xl font-black mb-4">GỢI Ý CÁ NHÂN</h3>
               <p className="text-lg font-bold">
-                Tham gia cùng hàng triệu người dùng hài lòng. Được các chuyên gia đánh giá cao nhất.
+                AI học hỏi sở thích và đưa ra gợi ý quán ăn, món ăn phù hợp với ngân sách của bạn.
               </p>
             </div>
           </div>
@@ -132,16 +148,16 @@ function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid sm:grid-cols-3 gap-8">
           <div className="bg-pink-500 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="text-6xl font-black mb-2">10 TRIỆU+</p>
-            <p className="text-2xl font-bold">Lượt tải</p>
+            <p className="text-6xl font-black mb-2">50K+</p>
+            <p className="text-2xl font-bold">Công thức</p>
           </div>
           <div className="bg-cyan-400 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="text-6xl font-black mb-2">4.9★</p>
+            <p className="text-6xl font-black mb-2">4.8★</p>
             <p className="text-2xl font-bold">Đánh giá</p>
           </div>
           <div className="bg-yellow-400 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="text-6xl font-black mb-2">150+</p>
-            <p className="text-2xl font-bold">Quốc gia</p>
+            <p className="text-6xl font-black mb-2">10K+</p>
+            <p className="text-2xl font-bold">Quán ăn</p>
           </div>
         </div>
       </section>
