@@ -190,13 +190,13 @@ function Home() {
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
                     <span className="font-bold">Gợi ý quán ăn theo giá (3 lần/ngày)</span>
                   </li>
-                  <li className="flex items-start gap-3 text-gray-500">
-                    <X className="w-6 h-6 flex-shrink-0 mt-1 text-red-600" strokeWidth={3} />
-                    <span className="font-bold">Đăng bài premium (công thức + video)</span>
+                  <li className="flex items-start gap-3">
+                  <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
+                    <span className="font-bold">Đăng bài chia sẻ</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="font-bold">Xem bài viết cộng đồng (10 bài/ngày)</span>
+                    <span className="font-bold">Xem bài viết cộng đồng</span>
                   </li>
                   <li className="flex items-start gap-3 text-gray-500">
                     <X className="w-6 h-6 flex-shrink-0 mt-1 text-red-600" strokeWidth={3} />
@@ -208,11 +208,11 @@ function Home() {
                   </li>
                   <li className="flex items-start gap-3 text-gray-500">
                     <X className="w-6 h-6 flex-shrink-0 mt-1 text-red-600" strokeWidth={3} />
-                    <span className="font-bold">Premium Food Planner</span>
+                    <span className="font-bold">Tham gia Challenge đặc biệt</span>
                   </li>
                   <li className="flex items-start gap-3 text-gray-500">
                     <X className="w-6 h-6 flex-shrink-0 mt-1 text-red-600" strokeWidth={3} />
-                    <span className="font-bold">Đăng công thức chi tiết</span>
+                    <span className="font-bold">Ưu đãi đối tác / Sự kiện ẩm thực</span>
                   </li>
                 </ul>
                 <button className="w-full px-8 py-5 bg-white text-black text-xl font-black border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:translate-x-1 transition-all">
@@ -246,11 +246,11 @@ function Home() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="font-black">Đăng bài premium (công thức + video)</span>
+                    <span className="font-black">Đăng bài chia sẻ</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="font-black">Xem bài viết cộng đồng không giới hạn</span>
+                    <span className="font-black">Xem bài viết cộng đồng</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
@@ -262,11 +262,11 @@ function Home() {
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="font-black">Premium Food Planner</span>
+                    <span className="font-black">Tham gia Challenge đặc biệt</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="w-6 h-6 flex-shrink-0 mt-1" strokeWidth={3} />
-                    <span className="font-black">Đăng công thức chi tiết</span>
+                    <span className="font-black">Ưu đãi đối tác / Sự kiện ẩm thực</span>
                   </li>
                 </ul>
                 <button className="w-full px-8 py-5 bg-black text-white text-xl font-black border-4 border-black shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] hover:-translate-y-1 hover:translate-x-1 transition-all">
@@ -336,7 +336,11 @@ function Home() {
               </summary>
               <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#E0F2FE]">
                 <p className="font-bold">
-                  Chúng tôi sử dụng mã hóa và tuân thủ các chuẩn bảo mật hiện đại. Bạn toàn quyền kiểm soát dữ liệu và có thể yêu cầu xóa bất kỳ lúc nào.
+                Chắc chắn rồi! Chúng tôi luôn đặt an toàn và quyền riêng tư của bạn lên hàng đầu.
+Tất cả dữ liệu đều được mã hóa trong quá trình truyền và lưu trữ, tuân thủ các tiêu chuẩn bảo mật hiện đại (như ISO 27001 và GDPR).
+
+Bạn hoàn toàn kiểm soát được thông tin cá nhân của mình — bao gồm quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu bất kỳ lúc nào.
+Hệ thống của chúng tôi cũng được kiểm tra bảo mật định kỳ để đảm bảo dữ liệu của bạn luôn được bảo vệ an toàn tuyệt đối.
                 </p>
               </div>
             </details>
@@ -361,7 +365,7 @@ function Home() {
       <section id="contact" className="bg-cyan-400 border-y-4 border-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-5xl sm:text-6xl font-black text-center mb-16">
-            LIÊN HỆ CHÚNG TÔI
+            LIÊN HỆ VỚI CHÚNG TÔI
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-8">
@@ -493,6 +497,94 @@ function Home() {
                 <div className="text-lg font-black">Google Play</div>
               </div>
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 border-y-4 border-black py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl sm:text-6xl font-black mb-6 text-white" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
+              KẾT NỐI VỚI CHÚNG TÔI
+            </h2>
+            <p className="text-2xl font-bold text-white">
+              Theo dõi để cập nhật tin tức mới nhất về MUMII
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Facebook Card */}
+            <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-blue-600 border-4 border-black w-16 h-16 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-3xl font-black">FACEBOOK</h3>
+                  <p className="text-lg font-bold text-blue-600">@app.mumii</p>
+                </div>
+              </div>
+              <p className="text-lg font-bold mb-6">
+                Tham gia cộng đồng Facebook để chia sẻ công thức, 
+                kinh nghiệm ẩm thực và kết nối với những người yêu thích màu sắc.
+              </p>
+              <a 
+                href="https://www.facebook.com/app.mumii" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-4 px-6 py-3 bg-blue-600 text-white font-black border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                THEO DÕI TRÊN FACEBOOK
+              </a>
+            </div>
+
+            {/* Threads Card */}
+            <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-white border-4 border-black w-16 h-16 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                  <img 
+                    src="/images/logo_threads.jpg" 
+                    alt="Threads Logo" 
+                    className="w-10 h-10 object-contain" 
+                  />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-black">THREADS</h3>
+                  <p className="text-lg font-bold text-gray-800">@formumii_corp</p>
+                </div>
+              </div>
+              <p className="text-lg font-bold mb-6">
+                Tham gia cuộc trò chuyện trên Threads để chia sẻ 
+                những khoảnh khắc ẩm thực đầy màu sắc và kết nối với cộng đồng.
+              </p>
+              <a 
+                href="https://www.threads.com/@formumii_corp" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-4 px-6 py-3 bg-black text-white font-black border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all"
+              >
+                <img 
+                  src="/images/logo_threads.jpg" 
+                  alt="Threads" 
+                  className="w-6 h-6 object-contain" 
+                />
+                THEO DÕI TRÊN THREADS
+              </a>
+            </div>
+          </div>
+
+          {/* Decorative Elements */}
+          <div className="absolute -top-6 -right-6 bg-yellow-400 border-4 border-black px-6 py-3 rotate-12 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+            <p className="font-black text-black">SOCIAL</p>
+          </div>
+          <div className="absolute -bottom-4 -left-4 bg-pink-500 border-4 border-black px-4 py-2 -rotate-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+            <p className="font-black text-white text-sm">CONNECT</p>
           </div>
         </div>
       </section>

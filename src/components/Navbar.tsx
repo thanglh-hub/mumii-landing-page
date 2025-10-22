@@ -57,7 +57,7 @@ function Navbar({ onHeightChange }: NavbarProps) {
             <button onClick={() => goToHash('#pricing')} className="text-lg font-bold hover:underline decoration-4">Bảng giá</button>
             <button onClick={() => goToHash('#faq')} className="text-lg font-bold hover:underline decoration-4">FAQ</button>
             <button onClick={() => goToHash('#contact')} className="text-lg font-bold hover:underline decoration-4">Liên hệ</button>
-            <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
+            <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Về chúng tôi</Link>
             <button onClick={() => goToHash('#download')} className="px-6 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-black border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] animate-bounce">
               TẢI XUỐNG NGAY
             </button>
