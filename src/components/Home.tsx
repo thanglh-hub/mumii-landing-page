@@ -296,22 +296,80 @@ function Home() {
                 <span className="text-xl font-black border-4 border-black bg-yellow-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#FFFBEB]">
-                <p className="font-bold">
-                  MUMII giúp bạn khám phá ẩm thực thông qua màu sắc và AI: trắc nghiệm màu sắc, gợi ý quán ăn theo ngân sách, lưu quán yêu thích và chia sẻ trải nghiệm.
+                <p className="font-bold mb-4">
+                  MUMII là ứng dụng ẩm thực thông minh giúp bạn khám phá món ăn theo cảm xúc, màu sắc và ngân sách.
                 </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="bg-yellow-400 border-2 border-black w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-black font-black text-sm">1</span>
+                    </div>
+                    <p className="font-bold">Làm trắc nghiệm AI Màu Sắc để tìm món hợp mood mỗi ngày</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-yellow-400 border-2 border-black w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-black font-black text-sm">2</span>
+                    </div>
+                    <p className="font-bold">Nhận gợi ý quán ăn thông minh theo vị, giá và tâm trạng</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-yellow-400 border-2 border-black w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-black font-black text-sm">3</span>
+                    </div>
+                    <p className="font-bold">Chia sẻ trải nghiệm & công thức nấu ăn cùng cộng đồng</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-yellow-400 border-2 border-black w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-black font-black text-sm">4</span>
+                    </div>
+                    <p className="font-bold">Khám phá bản đồ ăn uống (MUMII Map) – gợi ý địa điểm và chỉ đường nhanh chóng</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-yellow-400 border-2 border-black w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-black font-black text-sm">5</span>
+                    </div>
+                    <p className="font-bold">Tham gia challenge ẩm thực vui nhộn như "Ăn theo màu", "Ăn theo giá", "Ăn theo vị"</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="bg-yellow-400 border-2 border-black w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-black font-black text-sm">6</span>
+                    </div>
+                    <p className="font-bold">Lưu lại quán yêu thích và tạo bộ sưu tập món ăn riêng của bạn</p>
+                  </div>
+                </div>
               </div>
             </details>
 
             {/* Item 2 */}
             <details className="group bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
               <summary className="list-none cursor-pointer select-none flex items-center justify-between px-6 py-5">
-                <span className="text-xl font-black">Gói Free và Premium khác nhau thế nào?</span>
-                <span className="text-xl font-black border-4 border-black bg-pink-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
+                <span className="text-xl font-black">Challenge trong MUMII là gì vậy?</span>
+                <span className="text-xl font-black border-4 border-black bg-purple-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
               </summary>
-              <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#FDF2F8]">
-                <p className="font-bold">
-                  Gói Free phù hợp trải nghiệm cơ bản (giới hạn lượt). Premium mở khóa không giới hạn, đăng bài premium (công thức + video), planner và tìm kiếm nâng cao.
-                </p>
+              <div className="px-4 pb-4 pt-2 border-t-4 border-black bg-[#F3E8FF]">
+                <div className="space-y-3">
+                  {/* Simple Description */}
+                  <div className="p-3">
+                    <h3 className="text-lg font-black mb-2 text-black">Challenge Ẩm Thực</h3>
+                    <p className="font-bold mb-3 text-black text-sm">
+                      Trò chơi ẩm thực kết hợp cảm xúc và sáng tạo – nơi bạn được thử những thử thách như "Ăn theo màu", "Ăn theo vị", "Ăn theo giá" hay "Ăn theo mood hôm nay".
+                    </p>
+                    <ul className="space-y-1.5 text-sm">
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                        <span className="font-bold text-black">Khám phá gu vị mới qua các thử thách thú vị</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                        <span className="font-bold text-black">Chia sẻ trải nghiệm cùng cộng đồng</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-2 h-2 bg-yellow-400 rounded-full"></span>
+                        <span className="font-bold text-black">Nhận huy hiệu thú vị từ MUMII</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </details>
 
@@ -335,13 +393,48 @@ function Home() {
                 <span className="text-xl font-black border-4 border-black bg-cyan-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#E0F2FE]">
-                <p className="font-bold">
-                Chắc chắn rồi! Chúng tôi luôn đặt an toàn và quyền riêng tư của bạn lên hàng đầu.
-Tất cả dữ liệu đều được mã hóa trong quá trình truyền và lưu trữ, tuân thủ các tiêu chuẩn bảo mật hiện đại (như ISO 27001 và GDPR).
-
-Bạn hoàn toàn kiểm soát được thông tin cá nhân của mình — bao gồm quyền truy cập, chỉnh sửa hoặc yêu cầu xóa dữ liệu bất kỳ lúc nào.
-Hệ thống của chúng tôi cũng được kiểm tra bảo mật định kỳ để đảm bảo dữ liệu của bạn luôn được bảo vệ an toàn tuyệt đối.
-                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="bg-green-500 border-2 border-black w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white font-black text-sm">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-black text-lg mb-1">Mã hóa toàn diện</p>
+                      <p className="font-bold">Tất cả dữ liệu được mã hóa trong quá trình truyền và lưu trữ</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="bg-blue-500 border-2 border-black w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white font-black text-sm">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-black text-lg mb-1">Tuân thủ chuẩn quốc tế</p>
+                      <p className="font-bold">ISO 27001 và GDPR - đảm bảo bảo mật cao nhất</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="bg-purple-500 border-2 border-black w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white font-black text-sm">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-black text-lg mb-1">Quyền kiểm soát hoàn toàn</p>
+                      <p className="font-bold">Bạn có thể truy cập, chỉnh sửa hoặc xóa dữ liệu bất kỳ lúc nào</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="bg-orange-500 border-2 border-black w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <span className="text-white font-black text-sm">✓</span>
+                    </div>
+                    <div>
+                      <p className="font-black text-lg mb-1">Kiểm tra bảo mật định kỳ</p>
+                      <p className="font-bold">Hệ thống được kiểm tra liên tục để đảm bảo an toàn tuyệt đối</p>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
             </details>
 
@@ -511,7 +604,7 @@ Hệ thống của chúng tôi cũng được kiểm tra bảo mật định k�
             <p className="text-2xl font-bold text-white">
               Theo dõi để cập nhật tin tức mới nhất về MUMII
             </p>
-          </div>
+              </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Facebook Card */}
@@ -521,15 +614,14 @@ Hệ thống của chúng tôi cũng được kiểm tra bảo mật định k�
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                   </svg>
-                </div>
-                <div>
+            </div>
+            <div>
                   <h3 className="text-3xl font-black">FACEBOOK</h3>
                   <p className="text-lg font-bold text-blue-600">@app.mumii</p>
                 </div>
               </div>
               <p className="text-lg font-bold mb-6">
-                Tham gia cộng đồng Facebook để chia sẻ công thức, 
-                kinh nghiệm ẩm thực và kết nối với những người yêu thích màu sắc.
+              Luôn đồng hành cùng MUMII trên Facebook để không bỏ lỡ tin mới, câu chuyện hay và trải nghiệm ẩm thực thú vị mỗi ngày.
               </p>
               <a 
                 href="https://www.facebook.com/app.mumii" 
@@ -553,15 +645,15 @@ Hệ thống của chúng tôi cũng được kiểm tra bảo mật định k�
                     alt="Threads Logo" 
                     className="w-10 h-10 object-contain" 
                   />
-                </div>
-                <div>
+            </div>
+            <div>
                   <h3 className="text-3xl font-black">THREADS</h3>
                   <p className="text-lg font-bold text-gray-800">@formumii_corp</p>
                 </div>
-              </div>
+            </div>
               <p className="text-lg font-bold mb-6">
-                Tham gia cuộc trò chuyện trên Threads để chia sẻ 
-                những khoảnh khắc ẩm thực đầy màu sắc và kết nối với cộng đồng.
+                Tham gia cùng MUMII trên Threads để chia sẻ 
+                những khoảnh khắc ẩm thực đầy thú vị và kết nối với cộng đồng.
               </p>
               <a 
                 href="https://www.threads.com/@formumii_corp" 
