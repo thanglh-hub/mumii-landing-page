@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Smartphone, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Logo from './Logo';
 
 interface NavbarProps {
   onHeightChange?: (height: number) => void;
@@ -46,9 +47,8 @@ function Navbar({ onHeightChange }: NavbarProps) {
     <nav id="app-navbar" className={`fixed top-0 left-0 right-0 z-50 border-b-4 border-black bg-yellow-400 transition-transform duration-300 ${isNavHidden ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center gap-2">
-            <Smartphone className="w-8 h-8" strokeWidth={3} />
-            <span className="text-2xl font-black">MUMII</span>
+          <Link to="/">
+            <Logo size="md" />
           </Link>
 
           {/* Desktop Menu */}

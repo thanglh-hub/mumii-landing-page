@@ -1,6 +1,7 @@
-import { Smartphone, Download, Check, Mail, Phone, MapPin, X, Utensils, ChefHat, Coffee, Pizza, Heart } from 'lucide-react';
+import { Download, Check, Mail, Phone, MapPin, X, Utensils, ChefHat, Coffee, Pizza, Heart } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function Home() {
   const [navHeight, setNavHeight] = useState(80);
@@ -165,7 +166,7 @@ function Home() {
       {/* Pricing Section */}
       <section id="pricing" className="relative py-24 border-y-4 border-black" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #FFF 0 20px, #FFEDD5 20px 40px)' }}>
         <h2 className="text-5xl sm:text-6xl font-black text-center mb-16" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
-          BẢNG GIÁ
+          BẢNG GIÁ CÁC GÓI ĐĂNG KÍ
         </h2>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10">
@@ -175,7 +176,7 @@ function Home() {
             <div className="bg-white border-4 border-black p-2 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
               <div className="border-4 border-black p-8">
                 <div className="bg-lime-300 border-4 border-black px-5 py-2 inline-block -rotate-1 mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <p className="text-xl font-black">Free</p>
+                  <p className="text-xl font-black">Gói Free</p>
                 </div>
                 <div className="mb-8">
                   <p className="text-6xl font-black leading-none" style={{ WebkitTextStroke: '2px black' }}>0đ/tháng</p>
@@ -496,47 +497,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black text-white border-t-4 border-black py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Smartphone className="w-6 h-6" strokeWidth={3} />
-                <span className="text-xl font-black">MUMII</span>
-              </div>
-              <p className="font-bold">Định nghĩa lại trải nghiệm di động.</p>
-            </div>
-            <div>
-              <h4 className="text-lg font-black mb-4">SẢN PHẨM</h4>
-              <ul className="space-y-2 font-bold">
-                <li><a href="#" className="hover:underline">Tính năng</a></li>
-                <li><a href="#" className="hover:underline">Bảng giá</a></li>
-                <li><a href="#" className="hover:underline">Tải xuống</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-black mb-4">CÔNG TY</h4>
-              <ul className="space-y-2 font-bold">
-                <li><a href="#" className="hover:underline">Về chúng tôi</a></li>
-                <li><a href="#" className="hover:underline">Blog</a></li>
-                <li><a href="#" className="hover:underline">Tuyển dụng</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-black mb-4">HỖ TRỢ</h4>
-              <ul className="space-y-2 font-bold">
-                <li><a href="#" className="hover:underline">Trung tâm trợ giúp</a></li>
-                <li><a href="#" className="hover:underline">Liên hệ</a></li>
-                <li><a href="#" className="hover:underline">Bảo mật</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-2 border-white pt-8 text-center font-bold">
-            <p>© 2025 MUMII. Bảo lưu mọi quyền.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

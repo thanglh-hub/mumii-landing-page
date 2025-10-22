@@ -1,7 +1,7 @@
-import { Smartphone, Users, Lightbulb, Code, Palette, Heart, Github, Linkedin, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Users, Lightbulb, Code, Palette, Heart, Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function AboutUs() {
   const [navHeight, setNavHeight] = useState(80);
@@ -149,7 +149,7 @@ function AboutUs() {
               <div className="bg-yellow-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Code className="w-10 h-10" strokeWidth={3} />
               </div>
-              <h3 className="text-2xl font-black textCenter mb-4">LÊ VĂN C</h3>
+              <h3 className="text-2xl font-black text-center mb-4">LÊ VĂN C</h3>
               <p className="text-lg font-bold text-center mb-4 text-yellow-600">BACKEND DEVELOPER</p>
               <p className="text-base font-bold text-center mb-6">
                 Chuyên gia về AI và Machine Learning. 
@@ -193,47 +193,7 @@ function AboutUs() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-black text-white border-t-4 border-black py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Smartphone className="w-6 h-6" strokeWidth={3} />
-                <span className="text-xl font-black">MUMII</span>
-              </div>
-              <p className="font-bold">Định nghĩa lại trải nghiệm di động.</p>
-            </div>
-            <div>
-              <h4 className="text-lg font-black mb-4">SẢN PHẨM</h4>
-              <ul className="space-y-2 font-bold">
-                <li><Link to="/" className="hover:underline">Trang chủ</Link></li>
-                <li><Link to="/about" className="hover:underline">Giới thiệu</Link></li>
-                <li><a href="#" className="hover:underline">Tải xuống</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-black mb-4">CÔNG TY</h4>
-              <ul className="space-y-2 font-bold">
-                <li><Link to="/about" className="hover:underline">Về chúng tôi</Link></li>
-                <li><a href="#" className="hover:underline">Blog</a></li>
-                <li><a href="#" className="hover:underline">Tuyển dụng</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-black mb-4">HỖ TRỢ</h4>
-              <ul className="space-y-2 font-bold">
-                <li><a href="#" className="hover:underline">Trung tâm trợ giúp</a></li>
-                <li><a href="#" className="hover:underline">Liên hệ</a></li>
-                <li><a href="#" className="hover:underline">Bảo mật</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t-2 border-white pt-8 text-center font-bold">
-            <p>© 2025 MUMII. Bảo lưu mọi quyền.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
