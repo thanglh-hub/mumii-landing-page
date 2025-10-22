@@ -1,41 +1,22 @@
-import { Smartphone, Users, Lightbulb, Code, Palette, Heart, ArrowLeft, Github, Linkedin, Mail } from 'lucide-react';
+import { Smartphone, Users, Lightbulb, Code, Palette, Heart, Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import Navbar from './Navbar';
 
 function AboutUs() {
+  const [navHeight, setNavHeight] = useState(80);
+
+  useEffect(() => {
+    const el = document.getElementById('app-navbar');
+    if (el) setNavHeight(el.offsetHeight);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
-      {/* Navigation */}
-      <nav className="border-b-4 border-black bg-yellow-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <Link to="/" className="flex items-center gap-2">
-              <Smartphone className="w-8 h-8" strokeWidth={3} />
-              <span className="text-2xl font-black">TÊN ỨNG DỤNG</span>
-            </Link>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center gap-8">
-              <Link to="/" className="text-lg font-bold hover:underline decoration-4">Trang chủ</Link>
-              <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-              <button className="px-6 py-3 bg-black text-white font-bold border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-transform">
-                BẮT ĐẦU NGAY
-              </button>
-            </div>
-
-            {/* Back Button */}
-            <Link 
-              to="/" 
-              className="px-6 py-3 bg-white text-black font-bold border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-transform flex items-center gap-2"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              QUAY LẠI
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navbar onHeightChange={(h) => setNavHeight(h)} />
 
       {/* Hero Section */}
-      <section className="relative py-24 border-y-4 border-black" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #FFF 0 20px, #FFEDD5 20px 40px)' }}>
+      <section className="relative py-24 border-y-4 border-black" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #FFF 0 20px, #FFEDD5 20px 40px)', paddingTop: navHeight + 40 }}>
         <div className="absolute -top-6 left-6 rotate-6 bg-pink-500 border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
           <span className="font-black text-white">ĐỘI NGŨ PHÁT TRIỂN</span>
         </div>
@@ -168,7 +149,7 @@ function AboutUs() {
               <div className="bg-yellow-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Code className="w-10 h-10" strokeWidth={3} />
               </div>
-              <h3 className="text-2xl font-black text-center mb-4">LÊ VĂN C</h3>
+              <h3 className="text-2xl font-black textCenter mb-4">LÊ VĂN C</h3>
               <p className="text-lg font-bold text-center mb-4 text-yellow-600">BACKEND DEVELOPER</p>
               <p className="text-base font-bold text-center mb-6">
                 Chuyên gia về AI và Machine Learning. 
@@ -219,7 +200,7 @@ function AboutUs() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Smartphone className="w-6 h-6" strokeWidth={3} />
-                <span className="text-xl font-black">TÊN ỨNG DỤNG</span>
+                <span className="text-xl font-black">MUMII</span>
               </div>
               <p className="font-bold">Định nghĩa lại trải nghiệm di động.</p>
             </div>
@@ -249,7 +230,7 @@ function AboutUs() {
             </div>
           </div>
           <div className="border-t-2 border-white pt-8 text-center font-bold">
-            <p>© 2025 TÊN ỨNG DỤNG. Bảo lưu mọi quyền.</p>
+            <p>© 2025 MUMII. Bảo lưu mọi quyền.</p>
           </div>
         </div>
       </footer>
@@ -258,3 +239,4 @@ function AboutUs() {
 }
 
 export default AboutUs;
+

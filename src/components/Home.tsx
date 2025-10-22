@@ -1,58 +1,21 @@
-import { Smartphone, Zap, Shield, Star, Download, Menu, X, Check, Mail, Phone, MapPin } from 'lucide-react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Smartphone, Zap, Shield, Star, Download, Check, Mail, Phone, MapPin, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import Navbar from './Navbar';
 
 function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [navHeight, setNavHeight] = useState(80);
+
+  useEffect(() => {
+    const el = document.getElementById('app-navbar');
+    if (el) setNavHeight(el.offsetHeight);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
-      {/* Navigation */}
-      <nav className="border-b-4 border-black bg-yellow-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <Link to="/" className="flex items-center gap-2">
-              <Smartphone className="w-8 h-8" strokeWidth={3} />
-              <span className="text-2xl font-black">TÊN ỨNG DỤNG</span>
-            </Link>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center gap-8">
-              <a href="#features" className="text-lg font-bold hover:underline decoration-4">Tính năng</a>
-              <a href="#pricing" className="text-lg font-bold hover:underline decoration-4">Bảng giá</a>
-              <a href="#contact" className="text-lg font-bold hover:underline decoration-4">Liên hệ</a>
-              <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-              <button className="px-6 py-3 bg-black text-white font-bold border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-transform">
-                BẮT ĐẦU NGAY
-              </button>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 border-4 border-black bg-white hover:bg-gray-100"
-            >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t-4 border-black bg-yellow-400 px-4 py-6 space-y-4">
-            <a href="#features" className="block text-lg font-bold hover:underline decoration-4">Tính năng</a>
-            <a href="#pricing" className="block text-lg font-bold hover:underline decoration-4">Bảng giá</a>
-            <a href="#contact" className="block text-lg font-bold hover:underline decoration-4">Liên hệ</a>
-            <Link to="/about" className="block text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-            <button className="w-full px-6 py-3 bg-black text-white font-bold border-4 border-black">
-              BẮT ĐẦU NGAY
-            </button>
-          </div>
-        )}
-      </nav>
+      <Navbar onHeightChange={(h) => setNavHeight(h)} />
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20`} style={{ paddingTop: navHeight + 40 }}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-none mb-6">
@@ -117,7 +80,7 @@ function Home() {
             </div>
 
             <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-yellow-400 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
+              <div className="bg-yellow-400 border-4 border-black w-16 h-16 flex itemsCenter justify-center mb-6">
                 <Star className="w-8 h-8" strokeWidth={3} />
               </div>
               <h3 className="text-3xl font-black mb-4">ĐÁNH GIÁ 5 SAO</h3>
@@ -214,10 +177,10 @@ function Home() {
             <div className="bg-pink-500 border-4 border-black p-2 shadow-[16px_16px_0px_0px_rgba(0,0,0,1)]">
               <div className="border-4 border-black p-8 text-white">
                 <div className="bg-black text-white border-4 border-black px-5 py-2 inline-block rotate-1 mb-6 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
-                  <p className="text-xl font-black">Premium</p>
+                  <p className="text-xl font-black">Gói Premium</p>
                 </div>
                 <div className="mb-8">
-                  <p className="text-6xl font-black leading-none" style={{ WebkitTextStroke: '2px black' }}>5.000đ/tháng</p>
+                  <p className="text-6xl font-black leading-none" style={{ WebkitTextStroke: '2px black' }}>36.000đ/tháng</p>
                 </div>
                 <ul className="space-y-4 mb-10">
                   <li className="flex items-start gap-3">
@@ -279,8 +242,7 @@ function Home() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-black mb-2">EMAIL</h3>
-                    <p className="text-lg font-bold">support@appname.com</p>
-                    <p className="text-lg font-bold">business@appname.com</p>
+                    <p className="text-lg font-bold">contact.mumii@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -292,7 +254,7 @@ function Home() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-black mb-2">ĐIỆN THOẠI</h3>
-                    <p className="text-lg font-bold">+84 123 456 789</p>
+                    <p className="text-lg font-bold">+84 901 544 713</p>
                     <p className="text-lg font-bold">Thứ 2 - Thứ 6, 9:00 - 18:00</p>
                   </div>
                 </div>
@@ -305,8 +267,8 @@ function Home() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-black mb-2">ĐỊA CHỈ</h3>
-                    <p className="text-lg font-bold">123 Đường ABC, Quận 1</p>
-                    <p className="text-lg font-bold">TP. Hồ Chí Minh, Việt Nam</p>
+                    <p className="text-lg font-bold">Lô E2a-7, Đường D1, Khu Công nghệ cao,</p>
+                    <p className="text-lg font-bold">Phường Tăng Nhơn Phú, TP. Hồ Chí Minh, Việt Nam</p>
                   </div>
                 </div>
               </div>
@@ -381,7 +343,7 @@ function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Smartphone className="w-6 h-6" strokeWidth={3} />
-                <span className="text-xl font-black">TÊN ỨNG DỤNG</span>
+                <span className="text-xl font-black">MUMII</span>
               </div>
               <p className="font-bold">Định nghĩa lại trải nghiệm di động.</p>
             </div>
@@ -411,7 +373,7 @@ function Home() {
             </div>
           </div>
           <div className="border-t-2 border-white pt-8 text-center font-bold">
-            <p>© 2025 TÊN ỨNG DỤNG. Bảo lưu mọi quyền.</p>
+            <p>© 2025 MUMII. Bảo lưu mọi quyền.</p>
           </div>
         </div>
       </footer>
