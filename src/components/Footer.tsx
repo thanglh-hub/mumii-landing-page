@@ -12,35 +12,53 @@ function Footer() {
             <p className="font-bold">Định nghĩa lại trải nghiệm di động.</p>
           </div>
           <div>
-            <h4 className="text-lg font-black mb-4">SẢN PHẨM</h4>
+            <h4 className="text-lg font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600">SẢN PHẨM</h4>
             <ul className="space-y-2 font-bold">
-              <li><a href="/#features" className="hover:underline">Tính năng</a></li>
-              <li><a href="/#pricing" className="hover:underline">Bảng giá</a></li>
-              <li><a href="/#download" className="hover:underline">Tải xuống</a></li>
+              <li><a href="/#features" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tính năng</a></li>
+              <li><a href="/#pricing" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Bảng giá</a></li>
+              <li><a href="/#download" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tải xuống</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-black mb-4">START UP</h4>
+            <h4 className="text-lg font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">START UP</h4>
             <ul className="space-y-2 font-bold">
-              <li><Link to="/about" className="hover:underline">Về chúng tôi</Link></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">Tuyển dụng</a></li>
+              <li><Link to="/about" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Về chúng tôi</Link></li>
+              <li><a href="#" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Blog</a></li>
+              <li><a href="#" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tuyển dụng</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-black mb-4">HỖ TRỢ</h4>
+            <h4 className="text-lg font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">HỖ TRỢ</h4>
             <ul className="space-y-2 font-bold">
-              <li><a href="/#faq" className="hover:underline">FAQs</a></li>
-              <li><a href="/#contact" className="hover:underline">Liên hệ</a></li>
-              <li><a href="#" className="hover:underline">Chính sách và điều khoản</a></li>
+              <li><a href="/#faq" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">FAQs</a></li>
+              <li><a href="/#contact" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Liên hệ</a></li>
+              <li><a href="#" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Chính sách và điều khoản</a></li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-black mb-4">KẾT NỐI VỚI CHÚNG TÔI</h4>
-            <div className="flex flex-col gap-2 font-bold">
-              <a href="https://www.facebook.com/app.mumii" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a>
-              <a href="https://www.threads.com/@formumii_corp" target="_blank" rel="noopener noreferrer" className="hover:underline">Threads</a>
-            </div>
+            <h4 className="text-lg font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-lime-600">KẾT NỐI CHÚNG TÔI</h4>
+            <ul className="space-y-2 font-bold">
+              <li>
+                <a 
+                  href="https://www.facebook.com/app.mumii" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:bg-gradient-to-r hover:from-lime-500 hover:to-lime-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.threads.com/@formumii_corp" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:bg-gradient-to-r hover:from-lime-500 hover:to-lime-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out"
+                >
+                  Threads
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="border-t-2 border-white pt-8 text-center font-bold">
