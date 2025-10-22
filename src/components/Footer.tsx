@@ -24,7 +24,7 @@ function Footer() {
             <ul className="space-y-2 font-bold">
               <li><Link to="/about" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Về chúng tôi</Link></li>
               <li><a href="#" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Blog</a></li>
-              <li><a href="#" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tuyển dụng</a></li>
+              <li><Link to="/careers" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tuyển dụng</Link></li>
             </ul>
           </div>
           <div>
