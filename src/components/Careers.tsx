@@ -359,7 +359,7 @@ function Careers() {
       </section>
 
       {/* Contact Info */}
-      <section className="bg-cyan-400 border-y-4 border-black py-20">
+      <section className="bg-white border-y-4 border-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-5xl sm:text-6xl font-black text-center mb-16">
             LIÊN HỆ VỚI CHÚNG TÔI
