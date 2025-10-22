@@ -23,7 +23,7 @@ function Footer() {
             <h4 className="text-lg font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">START UP</h4>
             <ul className="space-y-2 font-bold">
               <li><Link to="/about" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Về chúng tôi</Link></li>
-              <li><a href="#" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Blog</a></li>
+              <li><Link to="/blog" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Blog</Link></li>
               <li><Link to="/careers" className="hover:bg-gradient-to-r hover:from-cyan-500 hover:to-cyan-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tuyển dụng</Link></li>
             </ul>
           </div>
