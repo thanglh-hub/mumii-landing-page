@@ -55,10 +55,11 @@ function Navbar({ onHeightChange }: NavbarProps) {
           <div className="hidden md:flex items-center gap-8">
             <button onClick={() => goToHash('#features')} className="text-lg font-bold hover:underline decoration-4">Tính năng</button>
             <button onClick={() => goToHash('#pricing')} className="text-lg font-bold hover:underline decoration-4">Bảng giá</button>
+            <button onClick={() => goToHash('#faq')} className="text-lg font-bold hover:underline decoration-4">FAQ</button>
             <button onClick={() => goToHash('#contact')} className="text-lg font-bold hover:underline decoration-4">Liên hệ</button>
             <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-            <button className="px-6 py-3 bg-black text-white font-bold border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-transform">
-              TẢI XUỐNG NGAY
+            <button onClick={() => goToHash('#contact')} className="px-6 py-3 bg-black text-white font-bold border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-transform">
+              GỬI TIN NHẮN
             </button>
           </div>
 
@@ -77,10 +78,11 @@ function Navbar({ onHeightChange }: NavbarProps) {
         <div className="md:hidden border-t-4 border-black bg-yellow-400 px-4 py-6 space-y-4">
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#features'); }} className="block text-lg font-bold hover:underline decoration-4">Tính năng</button>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#pricing'); }} className="block text-lg font-bold hover:underline decoration-4">Bảng giá</button>
+          <button onClick={() => { setMobileMenuOpen(false); goToHash('#faq'); }} className="block text-lg font-bold hover:underline decoration-4">FAQ</button>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#contact'); }} className="block text-lg font-bold hover:underline decoration-4">Liên hệ</button>
           <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-          <button className="w-full px-6 py-3 bg-black text-white font-bold border-4 border-black">
-            BẮT ĐẦU NGAY
+          <button onClick={() => { setMobileMenuOpen(false); goToHash('#contact'); }} className="w-full px-6 py-3 bg-black text-white font-bold border-4 border-black">
+            GỬI TIN NHẮN
           </button>
         </div>
       )}

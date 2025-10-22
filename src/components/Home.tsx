@@ -4,15 +4,51 @@ import Navbar from './Navbar';
 
 function Home() {
   const [navHeight, setNavHeight] = useState(80);
+  const [showThankYou, setShowThankYou] = useState(false);
 
   useEffect(() => {
     const el = document.getElementById('app-navbar');
     if (el) setNavHeight(el.offsetHeight);
   }, []);
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setShowThankYou(true);
+    // Reset form
+    const form = e.target as HTMLFormElement;
+    form.reset();
+    // Ẩn thông báo sau 4 giây
+    setTimeout(() => setShowThankYou(false), 4000);
+  };
+
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
       <Navbar onHeightChange={(h) => setNavHeight(h)} />
+
+      {/* Thank You Notification */}
+      {showThankYou && (
+        <div className="fixed top-24 left-1/2 transform -translate-x-1/2 z-50 animate-pulse">
+          <div className="bg-gradient-to-r from-green-400 to-emerald-500 border-4 border-black px-10 py-6 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] relative">
+            {/* Decorative elements */}
+            <div className="absolute -top-2 -right-2 bg-yellow-400 border-2 border-black w-6 h-6 rotate-45"></div>
+            <div className="absolute -bottom-1 -left-1 bg-pink-400 border-2 border-black w-4 h-4 rotate-12"></div>
+            
+            <div className="flex items-center gap-4">
+              <div className="bg-white border-4 border-black w-12 h-12 rounded-full flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span className="text-green-600 font-black text-2xl">✓</span>
+              </div>
+              <div>
+                <p className="text-white font-black text-2xl mb-1" style={{ textShadow: '2px 2px 0px rgba(0,0,0,1)' }}>
+                  CẢM ƠN BẠN!
+                </p>
+                <p className="text-white font-bold text-base" style={{ textShadow: '1px 1px 0px rgba(0,0,0,1)' }}>
+                  Tin nhắn đã được gửi thành công 🎉
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20`} style={{ paddingTop: navHeight + 40 }}>
@@ -225,6 +261,85 @@ function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="relative py-24 border-y-4 border-black" style={{ backgroundImage: 'repeating-linear-gradient(135deg, #FFF 0 24px, #E0F2FE 24px 48px)' }}>
+        <div className="absolute -top-6 left-6 rotate-3 bg-yellow-400 border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+          <span className="font-black">FAQ</span>
+        </div>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-5xl sm:text-6xl font-black text-center mb-16" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
+            CÂU HỎI THƯỜNG GẶP
+          </h2>
+
+          <div className="space-y-6">
+            {/* Item 1 */}
+            <details className="group bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+              <summary className="list-none cursor-pointer select-none flex items-center justify-between px-6 py-5">
+                <span className="text-xl font-black">Ứng dụng MUMII làm được gì?</span>
+                <span className="text-xl font-black border-4 border-black bg-yellow-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#FFFBEB]">
+                <p className="font-bold">
+                  MUMII giúp bạn khám phá ẩm thực thông qua màu sắc và AI: trắc nghiệm màu sắc, gợi ý quán ăn theo ngân sách, lưu quán yêu thích và chia sẻ trải nghiệm.
+                </p>
+              </div>
+            </details>
+
+            {/* Item 2 */}
+            <details className="group bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+              <summary className="list-none cursor-pointer select-none flex items-center justify-between px-6 py-5">
+                <span className="text-xl font-black">Gói Free và Premium khác nhau thế nào?</span>
+                <span className="text-xl font-black border-4 border-black bg-pink-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#FDF2F8]">
+                <p className="font-bold">
+                  Gói Free phù hợp trải nghiệm cơ bản (giới hạn lượt). Premium mở khóa không giới hạn, đăng bài premium (công thức + video), planner và tìm kiếm nâng cao.
+                </p>
+              </div>
+            </details>
+
+            {/* Item 3 */}
+            <details className="group bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+              <summary className="list-none cursor-pointer select-none flex items-center justify-between px-6 py-5">
+                <span className="text-xl font-black">Tôi có thể hủy gia hạn bất cứ lúc nào không?</span>
+                <span className="text-xl font-black border-4 border-black bg-lime-300 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#ECFCCB]">
+                <p className="font-bold">
+                  Có. Bạn có thể hủy bất cứ lúc nào trong phần tài khoản. Quyền lợi Premium vẫn còn đến hết chu kỳ đã thanh toán.
+                </p>
+              </div>
+            </details>
+
+            {/* Item 4 */}
+            <details className="group bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+              <summary className="list-none cursor-pointer select-none flex items-center justify-between px-6 py-5">
+                <span className="text-xl font-black">Dữ liệu của tôi có an toàn không?</span>
+                <span className="text-xl font-black border-4 border-black bg-cyan-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#E0F2FE]">
+                <p className="font-bold">
+                  Chúng tôi sử dụng mã hóa và tuân thủ các chuẩn bảo mật hiện đại. Bạn toàn quyền kiểm soát dữ liệu và có thể yêu cầu xóa bất kỳ lúc nào.
+                </p>
+              </div>
+            </details>
+
+            {/* Item 5 */}
+            <details className="group bg-white border-4 border-black shadow-[10px_10px_0px_0px_rgba(0,0,0,1)]">
+              <summary className="list-none cursor-pointer select-none flex items-center justify-between px-6 py-5">
+                <span className="text-xl font-black">Ứng dụng có hỗ trợ iOS và Android không?</span>
+                <span className="text-xl font-black border-4 border-black bg-yellow-400 px-3 py-1 group-open:rotate-90 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 pt-2 border-t-4 border-black bg-[#FFFBEB]">
+                <p className="font-bold">
+                  Có. MUMII được tối ưu cho cả iOS và Android, hoạt động mượt mà trên nhiều thiết bị.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="bg-cyan-400 border-y-4 border-black py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -276,13 +391,17 @@ function Home() {
 
             {/* Contact Form */}
             <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-              <form className="space-y-6">
+              <form 
+                className="space-y-6"
+                onSubmit={handleSubmit}
+              >
                 <div>
                   <label className="block text-xl font-black mb-2">TÊN CỦA BẠN</label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-yellow-400"
                     placeholder="Nhập tên của bạn"
+                    required
                   />
                 </div>
 
@@ -292,6 +411,7 @@ function Home() {
                     type="email"
                     className="w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-yellow-400"
                     placeholder="email@example.com"
+                    required
                   />
                 </div>
 
@@ -301,6 +421,7 @@ function Home() {
                     rows={5}
                     className="w-full px-4 py-3 border-4 border-black font-bold focus:outline-none focus:ring-4 focus:ring-yellow-400 resize-none"
                     placeholder="Nhập tin nhắn của bạn..."
+                    required
                   />
                 </div>
 
