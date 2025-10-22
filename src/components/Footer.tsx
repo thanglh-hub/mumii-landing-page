@@ -32,7 +32,7 @@ function Footer() {
             <ul className="space-y-2 font-bold">
               <li><a href="/#faq" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">FAQs</a></li>
               <li><a href="/#contact" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Liên hệ</a></li>
-              <li><a href="#" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Chính sách và điều khoản</a></li>
+              <li><Link to="/terms" className="hover:bg-gradient-to-r hover:from-yellow-500 hover:to-yellow-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Chính sách và điều khoản</Link></li>
             </ul>
           </div>
           <div>
