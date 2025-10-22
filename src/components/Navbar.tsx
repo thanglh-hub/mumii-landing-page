@@ -58,8 +58,8 @@ function Navbar({ onHeightChange }: NavbarProps) {
             <button onClick={() => goToHash('#faq')} className="text-lg font-bold hover:underline decoration-4">FAQ</button>
             <button onClick={() => goToHash('#contact')} className="text-lg font-bold hover:underline decoration-4">Liên hệ</button>
             <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-            <button onClick={() => goToHash('#contact')} className="px-6 py-3 bg-black text-white font-bold border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-transform">
-              GỬI TIN NHẮN
+            <button onClick={() => goToHash('#download')} className="px-6 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-black border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] animate-bounce">
+              TẢI XUỐNG NGAY
             </button>
           </div>
 
@@ -81,8 +81,8 @@ function Navbar({ onHeightChange }: NavbarProps) {
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#faq'); }} className="block text-lg font-bold hover:underline decoration-4">FAQ</button>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#contact'); }} className="block text-lg font-bold hover:underline decoration-4">Liên hệ</button>
           <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:underline decoration-4">Giới thiệu</Link>
-          <button onClick={() => { setMobileMenuOpen(false); goToHash('#contact'); }} className="w-full px-6 py-3 bg-black text-white font-bold border-4 border-black">
-            GỬI TIN NHẮN
+          <button onClick={() => { setMobileMenuOpen(false); goToHash('#download'); }} className="w-full px-6 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-bold border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] animate-bounce">
+            TẢI XUỐNG NGAY
           </button>
         </div>
       )}
