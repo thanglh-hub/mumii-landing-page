@@ -105,7 +105,7 @@ function Home() {
               <p className="font-black text-2xl">NGON!</p>
             </div>
             <div className="absolute -bottom-4 -left-4 bg-pink-500 border-4 border-black px-4 py-2 -rotate-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
-              <p className="font-black text-white text-sm">AI POWERED</p>
+              <p className="font-black text-white text-sm">A.I POWERED</p>
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@ function Home() {
               KHÁM PHÁ ẨM THỰC
             </h2>
             <p className="text-xl font-bold text-gray-800 max-w-2xl mx-auto">
-              Trải nghiệm ẩm thực hoàn toàn mới với AI thông minh, cộng đồng sôi động và những tính năng độc đáo
+              Trải nghiệm ẩm thực hoàn toàn mới với A.I thông minh, cộng đồng sôi động và những tính năng độc đáo
             </p>
           </div>
 
@@ -141,7 +141,7 @@ function Home() {
               <div className="bg-gradient-to-br from-pink-500 to-pink-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
                 <Utensils className="w-10 h-10 text-white" strokeWidth={2} />
               </div>
-              <h3 className="text-3xl font-black mb-4 group-hover:text-pink-600 transition-colors">AI MÀU SẮC</h3>
+              <h3 className="text-3xl font-black mb-4 group-hover:text-pink-600 transition-colors">A.I MÀU SẮC</h3>
               <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
                 Trắc nghiệm màu sắc thông minh để tìm món ăn phù hợp với tâm trạng và sở thích của bạn.
               </p>
@@ -177,7 +177,7 @@ function Home() {
               <div className="bg-gradient-to-br from-orange-400 to-orange-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
                 <span className="text-3xl">🤖</span>
               </div>
-              <h3 className="text-3xl font-black mb-4 group-hover:text-orange-600 transition-colors">AI CHATBOT THÔNG MINH</h3>
+              <h3 className="text-3xl font-black mb-4 group-hover:text-orange-600 transition-colors">A.I CHATBOT THÔNG MINH</h3>
               <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
                 Trò chuyện với AI để nhận gợi ý món ăn phù hợp với tâm trạng, sở thích và nhu cầu dinh dưỡng.
               </p>
@@ -622,7 +622,7 @@ function Home() {
             SẴN SÀNG BẮT ĐẦU?
           </h2>
             <p className="text-2xl font-bold mb-8 text-white">
-            Tải xuống ngay và trải nghiệm hoàn toàn mới. Hiện có sẵn trên Android, iOS sắp ra mắt.
+            Tải xuống và trải nghiệm ngay. Hiện có sẵn trên Android, iOS sắp ra mắt.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             {/* App Store Button */}

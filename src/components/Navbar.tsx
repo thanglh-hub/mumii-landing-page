@@ -53,11 +53,56 @@ function Navbar({ onHeightChange }: NavbarProps) {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <Link to="/home" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Trang chủ</Link>
-            <Link to="/features" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Tính năng</Link>
-            <Link to="/blog" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Blog</Link>
-            <Link to="/about" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Về chúng tôi</Link>
-            <Link to="/careers" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Tuyển dụng</Link>
+            <Link 
+              to="/home" 
+              className={`text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+                location.pathname === '/' || location.pathname === '/home' 
+                  ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                  : ''
+              }`}
+            >
+              Trang chủ
+            </Link>
+            <Link 
+              to="/features" 
+              className={`text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+                location.pathname === '/features' 
+                  ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                  : ''
+              }`}
+            >
+              Tính năng
+            </Link>
+            <Link 
+              to="/blog" 
+              className={`text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+                location.pathname === '/blog' 
+                  ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                  : ''
+              }`}
+            >
+              Blog
+            </Link>
+            <Link 
+              to="/about" 
+              className={`text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+                location.pathname === '/about' 
+                  ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                  : ''
+              }`}
+            >
+              Về chúng tôi
+            </Link>
+            <Link 
+              to="/careers" 
+              className={`text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+                location.pathname === '/careers' 
+                  ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                  : ''
+              }`}
+            >
+              Tuyển dụng
+            </Link>
             <button onClick={() => goToHash('#download')} className="px-6 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-black border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] animate-bounce">
               TẢI XUỐNG NGAY
             </button>
@@ -76,13 +121,61 @@ function Navbar({ onHeightChange }: NavbarProps) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t-4 border-black bg-yellow-400 px-4 py-6 space-y-4">
-          <Link to="/home" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Trang chủ</Link>
-          <Link to="/features" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Tính năng</Link>
-          <button onClick={() => { setMobileMenuOpen(false); goToHash('#pricing'); }} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Bảng giá</button>
-          <button onClick={() => { setMobileMenuOpen(false); goToHash('#faq'); }} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">FAQ</button>
-          <button onClick={() => { setMobileMenuOpen(false); goToHash('#contact'); }} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Liên hệ</button>
-          <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Giới thiệu</Link>
-          <Link to="/blog" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Blog</Link>
+          <Link 
+            to="/home" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+              location.pathname === '/' || location.pathname === '/home' 
+                ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                : ''
+            }`}
+          >
+            Trang chủ
+          </Link>
+          <Link 
+            to="/features" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+              location.pathname === '/features' 
+                ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                : ''
+            }`}
+          >
+            Tính năng
+          </Link>
+          <Link 
+            to="/blog" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+              location.pathname === '/blog' 
+                ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                : ''
+            }`}
+          >
+            Blog
+          </Link>
+          <Link 
+            to="/about" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+              location.pathname === '/about' 
+                ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                : ''
+            }`}
+          >
+            Về chúng tôi
+          </Link>
+          <Link 
+            to="/careers" 
+            onClick={() => setMobileMenuOpen(false)} 
+            className={`block text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200 ${
+              location.pathname === '/careers' 
+                ? 'bg-black text-yellow-400 px-2 py-1 rounded shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]' 
+                : ''
+            }`}
+          >
+            Tuyển dụng
+          </Link>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#download'); }} className="w-full px-6 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-bold border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] animate-bounce">
             TẢI XUỐNG NGAY
           </button>

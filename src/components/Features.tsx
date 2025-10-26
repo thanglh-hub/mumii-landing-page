@@ -310,7 +310,7 @@ function Features() {
             SẴN SÀNG BẮT ĐẦU?
           </h2>
             <p className="text-2xl font-bold mb-8 text-white">
-            Tải xuống ngay và trải nghiệm hoàn toàn mới. Hiện có sẵn trên Android, iOS sắp ra mắt.
+            Tải xuống và trải nghiệm ngay. Hiện có sẵn trên Android, iOS sắp ra mắt.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             {/* App Store Button */}
