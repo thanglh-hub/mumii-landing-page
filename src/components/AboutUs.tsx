@@ -126,17 +126,17 @@ function AboutUs() {
             ĐỘI NGŨ PHÁT TRIỂN
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
               <div className="bg-pink-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Users className="w-10 h-10 text-white" strokeWidth={3} />
               </div>
-              <h3 className="text-2xl font-black text-center mb-4">NGUYỄN VĂN A</h3>
-              <p className="text-lg font-bold text-center mb-4 text-pink-500">LEAD DEVELOPER</p>
+              <h3 className="text-xl font-black text-center mb-4">NGUYỄN HOÀNG NHẬT ÂN</h3>
+              <p className="text-lg font-bold text-center mb-4 text-pink-500">BACKEND DEVELOPER</p>
               <p className="text-base font-bold text-center mb-6">
-                Chuyên gia React Native với 5+ năm kinh nghiệm. 
-                Đam mê tạo ra những ứng dụng di động mượt mà và thân thiện với người dùng.
+                Phụ trách thiết kế và phát triển hệ thống backend của ứng dụng. 
+                Tập trung vào hiệu năng, bảo mật và khả năng mở rộng của nền tảng MUMII.
               </p>
               <div className="flex justify-center gap-4">
                 <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
@@ -156,11 +156,11 @@ function AboutUs() {
               <div className="bg-cyan-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Palette className="w-10 h-10" strokeWidth={3} />
               </div>
-              <h3 className="text-2xl font-black text-center mb-4">TRẦN THỊ B</h3>
-              <p className="text-lg font-bold text-center mb-4 text-cyan-600">UI/UX DESIGNER</p>
+              <h3 className="text-2xl font-black text-center mb-4">LÊ HỮU THẮNG</h3>
+              <p className="text-lg font-bold text-center mb-4 text-cyan-600">FRONTEND DEVELOPER</p>
               <p className="text-base font-bold text-center mb-6">
-                Nhà thiết kế với con mắt thẩm mỹ tinh tế. 
-                Chuyên về Neo Brutalism và tạo ra những giao diện độc đáo, thu hút.
+                Phụ trách xây dựng giao diện và logic hiển thị của ứng dụng. 
+                Kết hợp cùng UI/UX team để đảm bảo sản phẩm hoàn thiện đúng định hướng thiết kế và trải nghiệm.
               </p>
               <div className="flex justify-center gap-4">
                 <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
@@ -180,11 +180,83 @@ function AboutUs() {
               <div className="bg-yellow-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Code className="w-10 h-10" strokeWidth={3} />
               </div>
-              <h3 className="text-2xl font-black text-center mb-4">LÊ VĂN C</h3>
+              <h3 className="text-2xl font-black text-center mb-4">ĐẶNG PHƯƠNG NAM</h3>
               <p className="text-lg font-bold text-center mb-4 text-yellow-600">BACKEND DEVELOPER</p>
               <p className="text-base font-bold text-center mb-6">
-                Chuyên gia về AI và Machine Learning. 
-                Phụ trách phát triển các thuật toán thông minh cho ứng dụng của chúng tôi.
+                Phát triển và tối ưu các API, xử lý dữ liệu, và tích hợp các tính năng AI vào hệ thống. 
+                Đảm bảo hoạt động ổn định và chính xác của nền tảng MUMII.
+              </p>
+              <div className="flex justify-center gap-4">
+                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Github className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Team Member 4 */}
+            <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
+              <div className="bg-lime-300 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Lightbulb className="w-10 h-10" strokeWidth={3} />
+              </div>
+              <h3 className="text-xl font-black text-center mb-4">NGUYỄN THỊ THANH NGÂN</h3>
+              <p className="text-lg font-bold text-center mb-4 text-lime-600">MARKETING & COMS</p>
+              <p className="text-base font-bold text-center mb-6">
+                Phụ trách truyền thông, lập kế hoạch marketing và định vị thương hiệu MUMII. 
+                Quản lý nội dung, chiến dịch quảng bá và tương tác với người dùng.
+              </p>
+              <div className="flex justify-center gap-4">
+                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Github className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Team Member 5 */}
+            <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
+              <div className="bg-orange-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Heart className="w-10 h-10 text-white" strokeWidth={3} />
+              </div>
+              <h3 className="text-2xl font-black text-center mb-4">PHẠM GIA KHIÊM</h3>
+              <p className="text-lg font-bold text-center mb-4 text-orange-600">FINANCE & OPERATIONS MANAGER</p>
+              <p className="text-base font-bold text-center mb-6">
+                Quản lý kế hoạch tài chính, ngân sách và vận hành dự án. 
+                Phụ trách phân bổ nguồn lực, dự trù chi phí và đảm bảo hiệu quả trong quá trình phát triển sản phẩm.
+              </p>
+              <div className="flex justify-center gap-4">
+                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Github className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                  <Mail className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+
+            {/* Team Member 6 */}
+            <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
+              <div className="bg-purple-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <Users className="w-10 h-10 text-white" strokeWidth={3} />
+              </div>
+              <h3 className="text-2xl font-black text-center mb-4">NGUYỄN THỊ THÙY NGÂN</h3>
+              <p className="text-lg font-bold text-center mb-4 text-purple-600">FRONTEND DEVELOPER</p>
+              <p className="text-base font-bold text-center mb-6">
+                Phụ trách xây dựng giao diện và logic hiển thị của ứng dụng. 
+                Kết hợp cùng UI/UX team để đảm bảo sản phẩm hoàn thiện đúng định hướng thiết kế và trải nghiệm.
               </p>
               <div className="flex justify-center gap-4">
                 <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
