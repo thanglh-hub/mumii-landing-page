@@ -23,13 +23,7 @@ function Features() {
             <div className="inline-block">
               <div className="bg-orange-400 border-4 border-black px-8 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform rotate-1">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-red-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🤖</span>
-                  </div>
                   <span className="text-black font-black text-xl uppercase tracking-wider">GỢI Ý MÓN ĂN</span>
-                  <div className="w-8 h-8 bg-yellow-400 border-4 border-black flex items-center justify-center">
-                    <span className="text-lg">🍽️</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -38,7 +32,7 @@ function Features() {
             <div className="space-y-6">
               <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-none">
                 <span className="text-orange-500" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
-                  AI CHATBOT
+                  A.I CHATBOT
                 </span>
                 <br />
                 <span className="text-red-600" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
@@ -47,12 +41,6 @@ function Features() {
               </h1>
               <div className="flex items-center gap-4">
                 <div className="w-20 h-2 bg-yellow-400 border-2 border-black"></div>
-                <div className="w-12 h-12 bg-green-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">⚡</span>
-                </div>
-                <div className="w-12 h-12 bg-red-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                  <span className="text-2xl">🍕</span>
-                </div>
               </div>
             </div>
 
@@ -66,18 +54,13 @@ function Features() {
             {/* Features List - Neo-brutalism Food Style */}
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { text: "Phân tích cảm xúc và sở thích ẩm thực", icon: "🧠", color: "bg-orange-400" },
-                { text: "Gợi ý món ăn dựa trên thời tiết và tâm trạng", icon: "🌤️", color: "bg-red-400" },
-                { text: "Tư vấn dinh dưỡng và thành phần món ăn", icon: "🥗", color: "bg-green-400" },
-                { text: "Lưu lịch sử và học hỏi từ phản hồi", icon: "📚", color: "bg-yellow-400" }
+                { text: "Phân tích cảm xúc và sở thích ẩm thực", color: "bg-orange-400" },
+                { text: "Gợi ý món ăn dựa trên thời tiết và tâm trạng", color: "bg-red-400" },
+                { text: "Tư vấn dinh dưỡng và thành phần món ăn", color: "bg-green-400" },
+                { text: "Lưu lịch sử và học hỏi từ phản hồi", color: "bg-yellow-400" }
               ].map((feature, index) => (
                 <div key={index} className={`${feature.color} border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 group`}>
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-white border-2 border-black flex items-center justify-center">
-                      <span className="text-lg">{feature.icon}</span>
-                    </div>
-                    <span className="text-black font-bold text-sm">{feature.text}</span>
-                  </div>
+                  <span className="text-black font-bold text-sm">{feature.text}</span>
                 </div>
               ))}
             </div>
@@ -131,13 +114,7 @@ function Features() {
               <div className="inline-block">
                 <div className="bg-green-400 border-4 border-black px-8 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform -rotate-1">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-blue-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                      <span className="text-2xl">🗺️</span>
-                    </div>
                     <span className="text-black font-black text-xl uppercase tracking-wider">TÌM KIẾM ĐỊA ĐIỂM</span>
-                    <div className="w-8 h-8 bg-yellow-400 border-4 border-black flex items-center justify-center">
-                      <span className="text-lg">🔍</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -155,12 +132,6 @@ function Features() {
                 </h2>
                 <div className="flex items-center gap-4">
                   <div className="w-20 h-2 bg-orange-400 border-2 border-black"></div>
-                  <div className="w-12 h-12 bg-red-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🍕</span>
-                  </div>
-                  <div className="w-12 h-12 bg-yellow-400 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🍔</span>
-                  </div>
                 </div>
               </div>
 
@@ -174,18 +145,13 @@ function Features() {
               {/* Features List - Neo-brutalism Food Style */}
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { text: "Bản đồ tương tác với hàng nghìn địa điểm ẩm thực", icon: "🗺️", color: "bg-green-400" },
-                  { text: "Lọc theo loại món, giá cả, khoảng cách và đánh giá", icon: "🔍", color: "bg-blue-400" },
-                  { text: "Xem ảnh thực tế và menu chi tiết của quán", icon: "📱", color: "bg-orange-400" },
-                  { text: "Đặt bàn và gọi món trực tiếp từ app", icon: "📞", color: "bg-red-400" }
+                  { text: "Bản đồ tương tác với hàng nghìn địa điểm ẩm thực", color: "bg-green-400" },
+                  { text: "Lọc theo loại món, giá cả, khoảng cách và đánh giá", color: "bg-blue-400" },
+                  { text: "Xem ảnh thực tế và menu chi tiết của quán", color: "bg-orange-400" },
+                  { text: "Đặt bàn và gọi món trực tiếp từ app", color: "bg-red-400" }
                 ].map((feature, index) => (
                   <div key={index} className={`${feature.color} border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 group`}>
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-white border-2 border-black flex items-center justify-center">
-                        <span className="text-lg">{feature.icon}</span>
-                      </div>
-                      <span className="text-black font-bold text-sm">{feature.text}</span>
-                    </div>
+                    <span className="text-black font-bold text-sm">{feature.text}</span>
                   </div>
                 ))}
               </div>
@@ -205,13 +171,7 @@ function Features() {
               <div className="inline-block">
                 <div className="bg-pink-400 border-4 border-black px-8 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform rotate-1">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-purple-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                      <span className="text-2xl">👥</span>
-                    </div>
                     <span className="text-black font-black text-xl uppercase tracking-wider">CHIA SẺ & KẾT NỐI</span>
-                    <div className="w-8 h-8 bg-red-500 border-4 border-black flex items-center justify-center">
-                      <span className="text-lg">❤️</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -229,12 +189,6 @@ function Features() {
                 </h2>
                 <div className="flex items-center gap-4">
                   <div className="w-20 h-2 bg-yellow-400 border-2 border-black"></div>
-                  <div className="w-12 h-12 bg-orange-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🍰</span>
-                  </div>
-                  <div className="w-12 h-12 bg-green-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🥗</span>
-                  </div>
                 </div>
               </div>
 
@@ -248,18 +202,13 @@ function Features() {
               {/* Features List - Neo-brutalism Food Style */}
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { text: "Đăng ảnh món ăn và chia sẻ công thức của bạn", icon: "📸", color: "bg-pink-400" },
-                  { text: "Follow các foodie và nhà hàng yêu thích", icon: "👥", color: "bg-purple-400" },
-                  { text: "Tham gia thảo luận và nhóm quan tâm về ẩm thực", icon: "💬", color: "bg-red-400" },
-                  { text: "Tích lũy điểm và huy hiệu từ hoạt động cộng đồng", icon: "🏆", color: "bg-yellow-400" }
+                  { text: "Đăng ảnh món ăn và chia sẻ công thức của bạn", color: "bg-pink-400" },
+                  { text: "Follow các foodie và nhà hàng yêu thích", color: "bg-purple-400" },
+                  { text: "Tham gia thảo luận và nhóm quan tâm về ẩm thực", color: "bg-red-400" },
+                  { text: "Tích lũy điểm và huy hiệu từ hoạt động cộng đồng", color: "bg-yellow-400" }
                 ].map((feature, index) => (
                   <div key={index} className={`${feature.color} border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 group`}>
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-white border-2 border-black flex items-center justify-center">
-                        <span className="text-lg">{feature.icon}</span>
-                      </div>
-                      <span className="text-black font-bold text-sm">{feature.text}</span>
-                    </div>
+                    <span className="text-black font-bold text-sm">{feature.text}</span>
                   </div>
                 ))}
               </div>
@@ -311,13 +260,7 @@ function Features() {
               <div className="inline-block">
                 <div className="bg-yellow-400 border-4 border-black px-8 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform -rotate-1">
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 bg-orange-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                      <span className="text-2xl">🏆</span>
-                    </div>
                     <span className="text-black font-black text-xl uppercase tracking-wider">KHÁM PHÁ & CHINH PHỤC</span>
-                    <div className="w-8 h-8 bg-red-500 border-4 border-black flex items-center justify-center">
-                      <span className="text-lg">🎮</span>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -331,12 +274,6 @@ function Features() {
                 </h2>
                 <div className="flex items-center gap-4">
                   <div className="w-20 h-2 bg-red-400 border-2 border-black"></div>
-                  <div className="w-12 h-12 bg-green-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🍕</span>
-                  </div>
-                  <div className="w-12 h-12 bg-blue-500 border-4 border-black flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-2xl">🍔</span>
-                  </div>
                 </div>
               </div>
 
@@ -350,18 +287,13 @@ function Features() {
               {/* Features List - Neo-brutalism Food Style */}
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
-                  { text: "Nhiệm vụ hàng ngày với phần thưởng hấp dẫn", icon: "📅", color: "bg-yellow-400" },
-                  { text: "Thử thách khám phá món ăn địa phương", icon: "🌍", color: "bg-orange-400" },
-                  { text: "Đua top với bạn bè và foodie khác", icon: "🏆", color: "bg-red-400" },
-                  { text: "Mở khóa huy hiệu, voucher giảm giá và ưu đãi đặc biệt", icon: "🎁", color: "bg-green-400" }
+                  { text: "Nhiệm vụ hàng ngày với phần thưởng hấp dẫn", color: "bg-yellow-400" },
+                  { text: "Thử thách khám phá món ăn địa phương", color: "bg-orange-400" },
+                  { text: "Đua top với bạn bè và foodie khác", color: "bg-red-400" },
+                  { text: "Mở khóa huy hiệu, voucher giảm giá và ưu đãi đặc biệt", color: "bg-green-400" }
                 ].map((feature, index) => (
                   <div key={index} className={`${feature.color} border-4 border-black p-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 group`}>
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 bg-white border-2 border-black flex items-center justify-center">
-                        <span className="text-lg">{feature.icon}</span>
-                      </div>
-                      <span className="text-black font-bold text-sm">{feature.text}</span>
-                    </div>
+                    <span className="text-black font-bold text-sm">{feature.text}</span>
                   </div>
                 ))}
               </div>
