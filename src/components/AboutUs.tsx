@@ -138,17 +138,6 @@ function AboutUs() {
                 Phụ trách thiết kế và phát triển hệ thống backend của ứng dụng. 
                 Tập trung vào hiệu năng, bảo mật và khả năng mở rộng của nền tảng MUMII.
               </p>
-              <div className="flex justify-center gap-4">
-                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Github className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
             </div>
 
             {/* Team Member 2 */}
@@ -162,17 +151,6 @@ function AboutUs() {
                 Phụ trách xây dựng giao diện và logic hiển thị của ứng dụng. 
                 Kết hợp cùng UI/UX team để đảm bảo sản phẩm hoàn thiện đúng định hướng thiết kế và trải nghiệm.
               </p>
-              <div className="flex justify-center gap-4">
-                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Github className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
             </div>
 
             {/* Team Member 3 */}
@@ -186,17 +164,6 @@ function AboutUs() {
                 Phát triển và tối ưu các API, xử lý dữ liệu, và tích hợp các tính năng AI vào hệ thống. 
                 Đảm bảo hoạt động ổn định và chính xác của nền tảng MUMII.
               </p>
-              <div className="flex justify-center gap-4">
-                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Github className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
             </div>
 
             {/* Team Member 4 */}
@@ -210,17 +177,6 @@ function AboutUs() {
                 Phụ trách truyền thông, lập kế hoạch marketing và định vị thương hiệu MUMII. 
                 Quản lý nội dung, chiến dịch quảng bá và tương tác với người dùng.
               </p>
-              <div className="flex justify-center gap-4">
-                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Github className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
             </div>
 
             {/* Team Member 5 */}
@@ -234,17 +190,6 @@ function AboutUs() {
                 Quản lý kế hoạch tài chính, ngân sách và vận hành dự án. 
                 Phụ trách phân bổ nguồn lực, dự trù chi phí và đảm bảo hiệu quả trong quá trình phát triển sản phẩm.
               </p>
-              <div className="flex justify-center gap-4">
-                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Github className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
             </div>
 
             {/* Team Member 6 */}
@@ -258,17 +203,6 @@ function AboutUs() {
                 Phụ trách xây dựng giao diện và logic hiển thị của ứng dụng. 
                 Kết hợp cùng UI/UX team để đảm bảo sản phẩm hoàn thiện đúng định hướng thiết kế và trải nghiệm.
               </p>
-              <div className="flex justify-center gap-4">
-                <a href="#" className="bg-black text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Github className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-blue-600 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="bg-red-500 text-white p-3 border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all">
-                  <Mail className="w-5 h-5" />
-                </a>
-              </div>
             </div>
           </div>
         </div>
