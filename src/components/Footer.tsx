@@ -9,12 +9,12 @@ function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xl font-black">MUMII</span>
             </div>
-            <p className="font-bold">Định nghĩa lại trải nghiệm di động.</p>
+            <p className="font-bold">Gu vị riêng, trải nghiệm khác</p>
           </div>
           <div>
             <h4 className="text-lg font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600">SẢN PHẨM</h4>
             <ul className="space-y-2 font-bold">
-              <li><a href="/#features" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tính năng</a></li>
+              <li><Link to="/features" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tính năng</Link></li>
               <li><a href="/#pricing" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Bảng giá</a></li>
               <li><a href="/#download" className="hover:bg-gradient-to-r hover:from-pink-500 hover:to-pink-600 hover:text-white hover:px-2 hover:py-1 hover:rounded transition-all duration-300 ease-in-out">Tải xuống</a></li>
             </ul>

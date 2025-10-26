@@ -55,14 +55,21 @@ function Home() {
       <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20`} style={{ paddingTop: navHeight + 40 }}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-none mb-6">
-              KHÁM PHÁ
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500" style={{ WebkitTextStroke: '2px black' }}>
-                ẨM THỰC
-              </span>
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black mb-6 space-y-2">
+              <div className="leading-tight">KHÁM PHÁ</div>
+              <div className="leading-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-500" style={{ WebkitTextStroke: '2px black' }}>
+                  ẨM THỰC
+                </span>
+              </div>
+              <div className="leading-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500" style={{ WebkitTextStroke: '2px black' }}>
+                  MỚI MẺ
+                </span>
+              </div>
             </h1>
             <p className="text-xl sm:text-2xl font-bold mb-8 max-w-xl">
-              Trải nghiệm ẩm thực độc đáo qua màu sắc và AI. Khám phá quán ăn, chia sẻ công thức và kết nối với cộng đồng yêu ẩm thực.
+            App số 1 dành cho người yêu ẩm thực -Kết nối Al, cộng đồng và trải nghiệm thực tế để khám phá hàng nghìn món ngon mỗi ngày!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-pink-500 text-white text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center gap-2">
@@ -206,17 +213,17 @@ function Home() {
       {/* Stats Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid sm:grid-cols-3 gap-8">
-          <div className="bg-pink-500 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="text-6xl font-black mb-2">50K+</p>
-            <p className="text-2xl font-bold">Công thức</p>
+          <div className="bg-pink-500 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 transition-all duration-300">
+            <p className="text-6xl font-black mb-2">1K+</p>
+            <p className="text-2xl font-bold">Lượt khám phá món ăn</p>
           </div>
-          <div className="bg-cyan-400 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="text-6xl font-black mb-2">4.8★</p>
-            <p className="text-2xl font-bold">Đánh giá</p>
+          <div className="bg-cyan-400 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 transition-all duration-300">
+            <p className="text-6xl font-black mb-2">200+</p>
+            <p className="text-2xl font-bold">Đánh giá chân thực</p>
           </div>
-          <div className="bg-yellow-400 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
-            <p className="text-6xl font-black mb-2">10K+</p>
-            <p className="text-2xl font-bold">Quán ăn</p>
+          <div className="bg-yellow-400 border-4 border-black p-8 text-center shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 transition-all duration-300">
+            <p className="text-6xl font-black mb-2">300+</p>
+            <p className="text-2xl font-bold">Quán ăn hợp tác</p>
           </div>
         </div>
       </section>

@@ -12,23 +12,56 @@ function AboutUs() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA]">
+    <div className="min-h-screen bg-orange-50">
       <Navbar onHeightChange={(h) => setNavHeight(h)} />
 
       {/* Hero Section */}
-      <section className="relative py-24 border-y-4 border-black" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #FFF 0 20px, #FFEDD5 20px 40px)', paddingTop: navHeight + 40 }}>
+      <section className="relative py-12 border-y-4 border-black" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #FFF 0 20px, #FFEDD5 20px 40px)', paddingTop: navHeight + 20 }}>
         <div className="absolute -top-6 left-6 rotate-6 bg-pink-500 border-4 border-black px-6 py-2 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
           <span className="font-black text-white">ĐỘI NGŨ PHÁT TRIỂN</span>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black text-center mb-8" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
-            GIỚI THIỆU VỀ CHÚNG TÔI
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black text-center mb-4" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
+            VỀ CHÚNG TÔI
           </h1>
-          <p className="text-2xl font-bold text-center max-w-4xl mx-auto">
-            Chúng tôi là một đội ngũ đam mê công nghệ, tạo ra những ứng dụng di động tuyệt vời 
-            để kết nối mọi người với ẩm thực và màu sắc.
-          </p>
+        </div>
+      </section>
+
+      {/* FPT University Section */}
+      <section className="py-20 bg-gradient-to-br from-orange-100 to-yellow-100 border-y-4 border-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="bg-white border-4 border-black p-8 shadow-[16px_16px_0px_0px_rgba(0,0,0,1)]">
+                <img 
+                  src="/images/fptuhcm.jpg" 
+                  alt="FPT University HCM Campus" 
+                  className="w-full h-80 object-cover border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]"
+                />
+                <div className="absolute -top-4 -right-4 bg-orange-500 border-4 border-black px-4 py-2 rotate-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                  <span className="font-black text-white text-sm">FPT UNIVERSITY</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+                <p className="text-lg font-bold mb-4">
+                  Chúng tôi là nhóm sinh viên đến từ <span className="text-orange-600 font-black">Đại học FPT – Cơ sở Hồ Chí Minh</span>, 
+                  cùng nhau thực hiện dự án MUMII trong khuôn khổ học phần <span className="text-orange-700 font-black">Khởi nghiệp – EXE201</span>.
+                </p>
+                <p className="text-lg font-bold mb-4">
+                  MUMII không chỉ là một bài tập lớn trên giảng đường, mà là bước khởi đầu cho một hành trình nghiêm túc – 
+                  nơi chúng tôi thử sức với việc biến ý tưởng thành sản phẩm thực tế.
+                </p>
+                <p className="text-lg font-bold">
+                  Chúng tôi tin rằng khởi nghiệp không chỉ bắt đầu từ vốn hay ý tưởng, mà từ tinh thần 
+                  <span className="text-pink-600 font-black"> dám làm, dám thử, và dám thất bại</span> để tạo nên giá trị mới.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -43,16 +76,14 @@ function AboutUs() {
                 </div>
                 <h2 className="text-4xl font-black mb-6">Ý TƯỞNG PHÁT TRIỂN</h2>
                 <p className="text-lg font-bold mb-4">
-                  Mọi thứ bắt đầu từ một ý tưởng đơn giản: Tại sao không tạo ra một ứng dụng 
-                  giúp mọi người khám phá màu sắc và ẩm thực một cách thú vị?
+                Chúng tôi tin rằng ăn uống không chỉ là chuyện thưởng thức món ăn, mà còn là cách con người chia sẻ cảm xúc và kết nối với nhau.
                 </p>
                 <p className="text-lg font-bold mb-4">
-                  Chúng tôi tin rằng màu sắc và thức ăn có mối liên hệ mật thiết với nhau. 
-                  Mỗi món ăn đều có màu sắc riêng, và mỗi màu sắc đều gợi lên những cảm xúc khác nhau.
+                Mỗi người đều có sở thích, thói quen và những khoảnh khắc riêng quanh bàn ăn — và MUMII được tạo ra để giúp mọi người khám phá, lưu giữ và chia sẻ những điều đó một cách dễ dàng hơn.
                 </p>
                 <p className="text-lg font-bold">
-                  Với sự hỗ trợ của AI, chúng tôi đã tạo ra một trải nghiệm độc đáo 
-                  giúp người dùng khám phá thế giới ẩm thực qua lăng kính màu sắc.
+                Dựa trên AI và công nghệ học máy, MUMII mang đến một trải nghiệm ẩm thực thông minh và gần gũi:
+                nơi người dùng có thể tìm món ăn phù hợp, khám phá địa điểm mới, trò chuyện cùng cộng đồng và biến những lựa chọn nhỏ hằng ngày thành những trải nghiệm thú vị.
                 </p>
               </div>
             </div>
@@ -62,7 +93,7 @@ function AboutUs() {
                 <div className="bg-white border-4 border-black p-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-pink-500 border-4 border-black p-4 text-center">
-                      <p className="text-3xl font-black text-white">2024</p>
+                      <p className="text-3xl font-black text-white">2025</p>
                       <p className="text-sm font-bold text-white">Năm thành lập</p>
                     </div>
                     <div className="bg-yellow-400 border-4 border-black p-4 text-center">
@@ -70,7 +101,7 @@ function AboutUs() {
                       <p className="text-sm font-bold">Tháng phát triển</p>
                     </div>
                     <div className="bg-lime-300 border-4 border-black p-4 text-center">
-                      <p className="text-3xl font-black">3</p>
+                      <p className="text-3xl font-black">6</p>
                       <p className="text-sm font-bold">Thành viên</p>
                     </div>
                     <div className="bg-pink-500 border-4 border-black p-4 text-center">
