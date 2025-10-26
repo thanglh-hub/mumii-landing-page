@@ -90,7 +90,7 @@ function Features() {
               {/* Phone Container */}
               <div className="relative w-80 h-[600px] mx-auto">
                 {/* Phone Frame */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] shadow-2xl transform rotate-y-12 group-hover:rotate-y-6 transition-transform duration-700">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] shadow-2xl transform rotate-y-12 group-hover:rotate-y-6 transition-transform duration-700 hover-phone">
                   {/* Phone Screen */}
                   <div className="absolute inset-2 bg-black rounded-[2.5rem] overflow-hidden">
                     {/* Clean White Space */}
@@ -399,7 +399,7 @@ function Features() {
             </button>
 
             {/* Google Play Button */}
-            <button className="flex items-center gap-4 px-8 py-4 bg-white text-black text-lg font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
+            <button className="flex items-center gap-4 px-8 py-4 bg-white text-black text-lg font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all hover-button">
               <div className="w-8 h-8 flex items-center justify-center">
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>

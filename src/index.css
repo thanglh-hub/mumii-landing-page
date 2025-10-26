@@ -11,3 +11,87 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* Custom Cursor Styles */
+* {
+  cursor: none !important;
+}
+
+/* Neo Brutalism Hover Effects */
+.hover-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px 0px rgba(0,0,0,1) !important;
+}
+
+.hover-button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1) !important;
+}
+
+.hover-phone {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-phone:hover {
+  transform: rotateY(6deg) rotateX(5deg);
+}
+
+.hover-scale {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 16px 16px 0px 0px rgba(0,0,0,1) !important;
+}
+
+.hover-bounce {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-bounce:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translate3d(0,0,0);
+  }
+  40%, 43% {
+    transform: translate3d(0, -8px, 0);
+  }
+  70% {
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+/* Special hover effects for interactive elements */
+button:hover,
+a:hover,
+[role="button"]:hover {
+  transform: translate(1px, 1px);
+  transition: transform 0.1s ease;
+}
+
+/* Smooth transitions for all interactive elements */
+button,
+a,
+[role="button"],
+.hover-card,
+.hover-button,
+.hover-phone,
+.hover-scale,
+.hover-bounce {
+  transition: all 0.2s ease;
+}
