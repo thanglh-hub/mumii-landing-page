@@ -53,10 +53,10 @@ function Navbar({ onHeightChange }: NavbarProps) {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => goToHash('#features')} className="text-lg font-bold hover:underline decoration-4">Tính năng</button>
+            <Link to="/home" className="text-lg font-bold hover:underline decoration-4">Trang chủ</Link>
+            <Link to="/features" className="text-lg font-bold hover:underline decoration-4">Tính năng</Link>
             <button onClick={() => goToHash('#pricing')} className="text-lg font-bold hover:underline decoration-4">Bảng giá</button>
-            <button onClick={() => goToHash('#faq')} className="text-lg font-bold hover:underline decoration-4">FAQ</button>
-            <button onClick={() => goToHash('#contact')} className="text-lg font-bold hover:underline decoration-4">Liên hệ</button>
+            <button onClick={() => goToHash('#faq')} className="text-lg font-bold hover:underline decoration-4">FAQs</button>
             <Link to="/about" className="text-lg font-bold hover:underline decoration-4">Về chúng tôi</Link>
             <Link to="/blog" className="text-lg font-bold hover:underline decoration-4">Blog</Link>
             <button onClick={() => goToHash('#download')} className="px-6 py-3 bg-gradient-to-r from-pink-500 to-orange-500 text-white font-black border-4 border-black hover:translate-x-1 hover:translate-y-1 transition-all shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] animate-bounce">
@@ -77,7 +77,8 @@ function Navbar({ onHeightChange }: NavbarProps) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t-4 border-black bg-yellow-400 px-4 py-6 space-y-4">
-          <button onClick={() => { setMobileMenuOpen(false); goToHash('#features'); }} className="block text-lg font-bold hover:underline decoration-4">Tính năng</button>
+          <Link to="/home" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:underline decoration-4">Trang chủ</Link>
+          <Link to="/features" onClick={() => setMobileMenuOpen(false)} className="block text-lg font-bold hover:underline decoration-4">Tính năng</Link>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#pricing'); }} className="block text-lg font-bold hover:underline decoration-4">Bảng giá</button>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#faq'); }} className="block text-lg font-bold hover:underline decoration-4">FAQ</button>
           <button onClick={() => { setMobileMenuOpen(false); goToHash('#contact'); }} className="block text-lg font-bold hover:underline decoration-4">Liên hệ</button>

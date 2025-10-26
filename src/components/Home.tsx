@@ -105,40 +105,98 @@ function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="bg-lime-300 border-y-4 border-black py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl sm:text-6xl font-black text-center mb-16">
-            TẠI SAO CHỌN MUMII?
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-pink-500 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
-                <Utensils className="w-8 h-8" strokeWidth={3} />
+      <section id="features" className="relative bg-gradient-to-br from-lime-300 via-yellow-200 to-orange-200 border-y-4 border-black py-20 overflow-hidden">
+        {/* Background Decorative Elements */}
+        <div className="absolute top-10 left-10 w-20 h-20 bg-pink-400 border-4 border-black rotate-12 animate-bounce"></div>
+        <div className="absolute top-20 right-20 w-16 h-16 bg-blue-400 border-4 border-black -rotate-12 animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-12 h-12 bg-yellow-400 border-4 border-black rotate-45 animate-ping"></div>
+        <div className="absolute bottom-10 right-10 w-24 h-24 bg-red-400 border-4 border-black -rotate-12 animate-bounce"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <div className="inline-block mb-6">
+              <div className="bg-gradient-to-r from-pink-500 to-orange-500 border-4 border-black px-8 py-4 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform rotate-1">
+                <span className="text-white font-black text-xl uppercase tracking-wider">TẠI SAO CHỌN MUMII?</span>
               </div>
-              <h3 className="text-3xl font-black mb-4">AI MÀU SẮC</h3>
-              <p className="text-lg font-bold">
+            </div>
+            <h2 className="text-5xl sm:text-6xl font-black mb-4" style={{ textShadow: '4px 4px 0px rgba(0,0,0,1)' }}>
+              KHÁM PHÁ ẨM THỰC
+            </h2>
+            <p className="text-xl font-bold text-gray-800 max-w-2xl mx-auto">
+              Trải nghiệm ẩm thực hoàn toàn mới với AI thông minh, cộng đồng sôi động và những tính năng độc đáo
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* AI MÀU SẮC */}
+            <div className="group bg-gradient-to-br from-white to-pink-50 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-pink-400 border-2 border-black rotate-45 opacity-20 group-hover:opacity-100 transition-opacity"></div>
+              <div className="bg-gradient-to-br from-pink-500 to-pink-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
+                <Utensils className="w-10 h-10 text-white" strokeWidth={2} />
+              </div>
+              <h3 className="text-3xl font-black mb-4 group-hover:text-pink-600 transition-colors">AI MÀU SẮC</h3>
+              <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
                 Trắc nghiệm màu sắc thông minh để tìm món ăn phù hợp với tâm trạng và sở thích của bạn.
               </p>
             </div>
 
-            <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-cyan-400 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
-                <ChefHat className="w-8 h-8" strokeWidth={3} />
+            {/* CỘNG ĐỒNG ĐẦU BẾP */}
+            <div className="group bg-gradient-to-br from-white to-cyan-50 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-cyan-400 border-2 border-black rotate-45 opacity-20 group-hover:opacity-100 transition-opacity"></div>
+              <div className="bg-gradient-to-br from-cyan-400 to-cyan-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
+                <ChefHat className="w-10 h-10 text-white" strokeWidth={2} />
               </div>
-              <h3 className="text-3xl font-black mb-4">CỘNG ĐỒNG ĐẦU BẾP</h3>
-              <p className="text-lg font-bold">
+              <h3 className="text-3xl font-black mb-4 group-hover:text-cyan-600 transition-colors">CỘNG ĐỒNG FOODIE</h3>
+              <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
                 Chia sẻ công thức, video nấu ăn và kết nối với cộng đồng yêu ẩm thực khắp nơi.
               </p>
             </div>
 
-            <div className="bg-white border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-yellow-400 border-4 border-black w-16 h-16 flex items-center justify-center mb-6">
-                <Heart className="w-8 h-8" strokeWidth={3} />
+            {/* GỢI Ý CÁ NHÂN */}
+            <div className="group bg-gradient-to-br from-white to-yellow-50 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 border-2 border-black rotate-45 opacity-20 group-hover:opacity-100 transition-opacity"></div>
+              <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
+                <Heart className="w-10 h-10 text-white" strokeWidth={2} />
               </div>
-              <h3 className="text-3xl font-black mb-4">GỢI Ý CÁ NHÂN</h3>
-              <p className="text-lg font-bold">
+              <h3 className="text-3xl font-black mb-4 group-hover:text-yellow-600 transition-colors">GỢI Ý CÁ NHÂN</h3>
+              <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
                 AI học hỏi sở thích và đưa ra gợi ý quán ăn, món ăn phù hợp với ngân sách của bạn.
+              </p>
+            </div>
+
+            {/* AI CHATBOT THÔNG MINH */}
+            <div className="group bg-gradient-to-br from-white to-orange-50 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-orange-400 border-2 border-black rotate-45 opacity-20 group-hover:opacity-100 transition-opacity"></div>
+              <div className="bg-gradient-to-br from-orange-400 to-orange-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
+                <span className="text-3xl">🤖</span>
+              </div>
+              <h3 className="text-3xl font-black mb-4 group-hover:text-orange-600 transition-colors">AI CHATBOT THÔNG MINH</h3>
+              <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
+                Trò chuyện với AI để nhận gợi ý món ăn phù hợp với tâm trạng, sở thích và nhu cầu dinh dưỡng.
+              </p>
+            </div>
+
+            {/* BẢN ĐỒ KHÁM PHÁ QUÁN */}
+            <div className="group bg-gradient-to-br from-white to-green-50 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-400 border-2 border-black rotate-45 opacity-20 group-hover:opacity-100 transition-opacity"></div>
+              <div className="bg-gradient-to-br from-green-400 to-green-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
+                <span className="text-3xl">🗺️</span>
+              </div>
+              <h3 className="text-3xl font-black mb-4 group-hover:text-green-600 transition-colors">BẢN ĐỒ KHÁM PHÁ QUÁN ĂN</h3>
+              <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
+                Khám phá hàng nghìn quán ăn xung quanh với bản đồ tương tác, đánh giá và chỉ đường nhanh chóng.
+              </p>
+            </div>
+
+            {/* GAME THỬ THÁCH */}
+            <div className="group bg-gradient-to-br from-white to-yellow-50 border-4 border-black p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="absolute -top-2 -right-2 w-8 h-8 bg-yellow-400 border-2 border-black rotate-45 opacity-20 group-hover:opacity-100 transition-opacity"></div>
+              <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 border-4 border-black w-20 h-20 flex items-center justify-center mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] group-hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] group-hover:scale-110 transition-all duration-300">
+                <span className="text-3xl">🏆</span>
+              </div>
+              <h3 className="text-3xl font-black mb-4 group-hover:text-yellow-600 transition-colors">GAME THỬ THÁCH</h3>
+              <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
+                Hoàn thành thử thách vui nhộn để khám phá món ăn mới và mở khóa phần thưởng độc quyền.
               </p>
             </div>
           </div>
@@ -350,7 +408,6 @@ function Home() {
                 <div className="space-y-3">
                   {/* Simple Description */}
                   <div className="p-3">
-                    <h3 className="text-lg font-black mb-2 text-black">Challenge Ẩm Thực</h3>
                     <p className="font-bold mb-3 text-black text-sm">
                       Trò chơi ẩm thực kết hợp cảm xúc và sáng tạo – nơi bạn được thử những thử thách như "Ăn theo màu", "Ăn theo vị", "Ăn theo giá" hay "Ăn theo mood hôm nay".
                     </p>
@@ -558,7 +615,7 @@ function Home() {
             SẴN SÀNG BẮT ĐẦU?
           </h2>
             <p className="text-2xl font-bold mb-8 text-white">
-            Tải xuống ngay và tham gia cuộc cách mạng. Hiện có sẵn trên Android, iOS sắp ra mắt.
+            Tải xuống ngay và trải nghiệm hoàn toàn mới. Hiện có sẵn trên Android, iOS sắp ra mắt.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             {/* App Store Button */}
