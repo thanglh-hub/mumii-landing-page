@@ -55,7 +55,6 @@ function Navbar({ onHeightChange }: NavbarProps) {
           <div className="hidden md:flex items-center gap-8">
             <Link to="/home" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Trang chủ</Link>
             <Link to="/features" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Tính năng</Link>
-            <button onClick={() => goToHash('#faq')} className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">FAQs</button>
             <Link to="/blog" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Blog</Link>
             <Link to="/about" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Về chúng tôi</Link>
             <Link to="/careers" className="text-lg font-bold hover:bg-black hover:text-yellow-400 hover:px-2 hover:py-1 hover:rounded transition-all duration-200">Tuyển dụng</Link>

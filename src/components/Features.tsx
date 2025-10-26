@@ -1,32 +1,12 @@
-import { MessageCircle, MapPin, Users, Trophy, Smartphone, Search, Heart, Star, Camera, Share2, Target, Gift, Sparkles, Zap, Crown, Flame } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 function Features() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
-    
-    let animationFrame: number;
-    const handleMouseMove = (e: MouseEvent) => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
-      animationFrame = requestAnimationFrame(() => {
-        setMousePosition({ x: e.clientX, y: e.clientY });
-      });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove, { passive: true });
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
-    };
   }, []);
 
   return (
