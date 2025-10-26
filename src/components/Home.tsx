@@ -167,7 +167,7 @@ function Home() {
               </div>
               <h3 className="text-3xl font-black mb-4 group-hover:text-yellow-600 transition-colors">GỢI Ý CÁ NHÂN</h3>
               <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
-                AI học hỏi sở thích và đưa ra gợi ý quán ăn, món ăn phù hợp với ngân sách của bạn.
+                A.I học hỏi sở thích và đưa ra gợi ý quán ăn, món ăn phù hợp với ngân sách của bạn.
               </p>
             </div>
 
@@ -179,7 +179,7 @@ function Home() {
               </div>
               <h3 className="text-3xl font-black mb-4 group-hover:text-orange-600 transition-colors">A.I CHATBOT THÔNG MINH</h3>
               <p className="text-lg font-bold text-gray-700 group-hover:text-gray-900 transition-colors">
-                Trò chuyện với AI để nhận gợi ý món ăn phù hợp với tâm trạng, sở thích và nhu cầu dinh dưỡng.
+                Trò chuyện với A.I để nhận gợi ý món ăn phù hợp với tâm trạng, sở thích và nhu cầu dinh dưỡng.
               </p>
             </div>
 
