@@ -52,8 +52,37 @@ function Home() {
       )}
 
       {/* Hero Section */}
-      <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20`} style={{ paddingTop: navHeight + 40 }}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden`} style={{ paddingTop: navHeight + 40 }}>
+        {/* Floating Food Stickers */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+          {/* Top Left Stickers */}
+          <div className="absolute top-10 left-10 text-6xl opacity-20 animate-float" style={{ animationDelay: '0s' }}>🍕</div>
+          <div className="absolute top-20 left-32 text-5xl opacity-25 animate-drift" style={{ animationDelay: '1s' }}>🍔</div>
+          <div className="absolute top-40 left-16 text-7xl opacity-15 animate-wobble" style={{ animationDelay: '2s' }}>🍣</div>
+          
+          {/* Top Right Stickers */}
+          <div className="absolute top-16 right-20 text-6xl opacity-20 animate-float" style={{ animationDelay: '0.5s' }}>🍜</div>
+          <div className="absolute top-32 right-40 text-5xl opacity-25 animate-drift" style={{ animationDelay: '1.5s' }}>🌮</div>
+          <div className="absolute top-48 right-16 text-6xl opacity-15 animate-wobble" style={{ animationDelay: '2.5s' }}>🥗</div>
+          
+          {/* Middle Left Stickers */}
+          <div className="absolute top-1/2 left-8 text-5xl opacity-20 animate-float" style={{ animationDelay: '0.8s' }}>🍰</div>
+          <div className="absolute top-1/2 left-24 text-6xl opacity-25 animate-drift" style={{ animationDelay: '1.8s' }}>☕</div>
+          <div className="absolute top-1/2 left-40 text-5xl opacity-15 animate-wobble" style={{ animationDelay: '2.8s' }}>🍦</div>
+          
+          {/* Middle Right Stickers */}
+          <div className="absolute top-1/2 right-8 text-6xl opacity-20 animate-float" style={{ animationDelay: '1.2s' }}>🍩</div>
+          <div className="absolute top-1/2 right-24 text-5xl opacity-25 animate-drift" style={{ animationDelay: '2.2s' }}>🍗</div>
+          <div className="absolute top-1/2 right-40 text-6xl opacity-15 animate-wobble" style={{ animationDelay: '0.3s' }}>🌭</div>
+          
+          {/* Bottom Stickers */}
+          <div className="absolute bottom-20 left-20 text-5xl opacity-20 animate-float" style={{ animationDelay: '1.7s' }}>🥘</div>
+          <div className="absolute bottom-32 right-32 text-6xl opacity-25 animate-drift" style={{ animationDelay: '0.7s' }}>🍤</div>
+          <div className="absolute bottom-40 left-1/3 text-5xl opacity-15 animate-wobble" style={{ animationDelay: '2.3s' }}>🥟</div>
+          <div className="absolute bottom-16 right-1/3 text-6xl opacity-20 animate-float" style={{ animationDelay: '1.1s' }}>🍚</div>
+        </div>
+        
+        <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black mb-6 space-y-2">
               <div className="leading-tight">KHÁM PHÁ</div>
@@ -69,7 +98,7 @@ function Home() {
               </div>
             </h1>
             <p className="text-xl sm:text-2xl font-bold mb-8 max-w-xl">
-            App số 1 dành cho người yêu ẩm thực -Kết nối Al, cộng đồng và trải nghiệm thực tế để khám phá hàng nghìn món ngon mỗi ngày!
+            Ứng dụng số 1 dành cho người yêu ẩm thực - Tích hợp A.I, cộng đồng và trải nghiệm thực tế để khám phá hàng nghìn món ngon mỗi ngày!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="px-8 py-4 bg-pink-500 text-white text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center gap-2">
