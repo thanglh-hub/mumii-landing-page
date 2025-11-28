@@ -1,4 +1,4 @@
-import { Users, Lightbulb, Code, Palette, Heart, Github, Linkedin, Mail } from 'lucide-react';
+import { User, Lightbulb, Heart } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -129,8 +129,9 @@ function AboutUs() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-pink-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Users className="w-10 h-10 text-white" strokeWidth={3} />
+              <div className="relative bg-blue-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <User className="w-10 h-10 text-white" strokeWidth={3} />
+                
               </div>
               <h3 className="text-xl font-black text-center mb-4">NGUYỄN HOÀNG NHẬT ÂN</h3>
               <p className="text-lg font-bold text-center mb-4 text-pink-500">BACKEND DEVELOPER</p>
@@ -142,8 +143,9 @@ function AboutUs() {
 
             {/* Team Member 2 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-cyan-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Palette className="w-10 h-10" strokeWidth={3} />
+              <div className="relative bg-cyan-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <User className="w-10 h-10 text-white" strokeWidth={3} />
+                
               </div>
               <h3 className="text-2xl font-black text-center mb-4">LÊ HỮU THẮNG</h3>
               <p className="text-lg font-bold text-center mb-4 text-cyan-600">FRONTEND DEVELOPER</p>
@@ -155,8 +157,9 @@ function AboutUs() {
 
             {/* Team Member 3 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-yellow-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Code className="w-10 h-10" strokeWidth={3} />
+              <div className="relative bg-yellow-400 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <User className="w-10 h-10 text-white" strokeWidth={3} />
+                
               </div>
               <h3 className="text-2xl font-black text-center mb-4">ĐẶNG PHƯƠNG NAM</h3>
               <p className="text-lg font-bold text-center mb-4 text-yellow-600">BACKEND DEVELOPER</p>
@@ -168,8 +171,9 @@ function AboutUs() {
 
             {/* Team Member 4 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-lime-300 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Lightbulb className="w-10 h-10" strokeWidth={3} />
+              <div className="relative bg-pink-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <User className="w-10 h-10 text-white" strokeWidth={3} />
+                
               </div>
               <h3 className="text-xl font-black text-center mb-4">NGUYỄN THỊ THANH NGÂN</h3>
               <p className="text-lg font-bold text-center mb-4 text-lime-600">MARKETING & COMS</p>
@@ -181,8 +185,9 @@ function AboutUs() {
 
             {/* Team Member 5 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-orange-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Heart className="w-10 h-10 text-white" strokeWidth={3} />
+              <div className="relative bg-orange-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <User className="w-10 h-10 text-white" strokeWidth={3} />
+                
               </div>
               <h3 className="text-2xl font-black text-center mb-4">PHẠM GIA KHIÊM</h3>
               <p className="text-lg font-bold text-center mb-4 text-orange-600">FINANCE & OPERATIONS MANAGER</p>
@@ -194,8 +199,9 @@ function AboutUs() {
 
             {/* Team Member 6 */}
             <div className="bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
-              <div className="bg-purple-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <Users className="w-10 h-10 text-white" strokeWidth={3} />
+              <div className="relative bg-purple-500 border-4 border-black w-20 h-20 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <User className="w-10 h-10 text-white" strokeWidth={3} />
+                
               </div>
               <h3 className="text-2xl font-black text-center mb-4">NGUYỄN THỊ THÙY NGÂN</h3>
               <p className="text-lg font-bold text-center mb-4 text-purple-600">FRONTEND DEVELOPER</p>

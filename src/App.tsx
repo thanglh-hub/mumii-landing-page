@@ -5,12 +5,10 @@ import AboutUs from './components/AboutUs';
 import Blog from './components/Blog';
 import Careers from './components/Careers';
 import TermsAndConditions from './components/TermsAndConditions';
-import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
     <Router>
-      <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

@@ -22,6 +22,15 @@ function Home() {
     setTimeout(() => setShowThankYou(false), 4000);
   };
 
+  const scrollToDownload = () => {
+    const el = document.getElementById('download');
+    const offset = navHeight || 80;
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.pageYOffset - offset - 10;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
       <Navbar onHeightChange={(h) => setNavHeight(h)} />
@@ -53,34 +62,7 @@ function Home() {
 
       {/* Hero Section */}
       <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative overflow-hidden`} style={{ paddingTop: navHeight + 40 }}>
-        {/* Floating Food Stickers */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-          {/* Top Left Stickers */}
-          <div className="absolute top-10 left-10 text-6xl opacity-20 animate-float" style={{ animationDelay: '0s' }}>🍕</div>
-          <div className="absolute top-20 left-32 text-5xl opacity-25 animate-drift" style={{ animationDelay: '1s' }}>🍔</div>
-          <div className="absolute top-40 left-16 text-7xl opacity-15 animate-wobble" style={{ animationDelay: '2s' }}>🍣</div>
-          
-          {/* Top Right Stickers */}
-          <div className="absolute top-16 right-20 text-6xl opacity-20 animate-float" style={{ animationDelay: '0.5s' }}>🍜</div>
-          <div className="absolute top-32 right-40 text-5xl opacity-25 animate-drift" style={{ animationDelay: '1.5s' }}>🌮</div>
-          <div className="absolute top-48 right-16 text-6xl opacity-15 animate-wobble" style={{ animationDelay: '2.5s' }}>🥗</div>
-          
-          {/* Middle Left Stickers */}
-          <div className="absolute top-1/2 left-8 text-5xl opacity-20 animate-float" style={{ animationDelay: '0.8s' }}>🍰</div>
-          <div className="absolute top-1/2 left-24 text-6xl opacity-25 animate-drift" style={{ animationDelay: '1.8s' }}>☕</div>
-          <div className="absolute top-1/2 left-40 text-5xl opacity-15 animate-wobble" style={{ animationDelay: '2.8s' }}>🍦</div>
-          
-          {/* Middle Right Stickers */}
-          <div className="absolute top-1/2 right-8 text-6xl opacity-20 animate-float" style={{ animationDelay: '1.2s' }}>🍩</div>
-          <div className="absolute top-1/2 right-24 text-5xl opacity-25 animate-drift" style={{ animationDelay: '2.2s' }}>🍗</div>
-          <div className="absolute top-1/2 right-40 text-6xl opacity-15 animate-wobble" style={{ animationDelay: '0.3s' }}>🌭</div>
-          
-          {/* Bottom Stickers */}
-          <div className="absolute bottom-20 left-20 text-5xl opacity-20 animate-float" style={{ animationDelay: '1.7s' }}>🥘</div>
-          <div className="absolute bottom-32 right-32 text-6xl opacity-25 animate-drift" style={{ animationDelay: '0.7s' }}>🍤</div>
-          <div className="absolute bottom-40 left-1/3 text-5xl opacity-15 animate-wobble" style={{ animationDelay: '2.3s' }}>🥟</div>
-          <div className="absolute bottom-16 right-1/3 text-6xl opacity-20 animate-float" style={{ animationDelay: '1.1s' }}>🍚</div>
-        </div>
+
         
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
@@ -101,13 +83,13 @@ function Home() {
             Ứng dụng số 1 dành cho người yêu ẩm thực - Tích hợp A.I, cộng đồng và trải nghiệm thực tế để khám phá hàng nghìn món ngon mỗi ngày!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-4 bg-pink-500 text-white text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center gap-2">
+              <button type="button" onClick={scrollToDownload} className="px-8 py-4 bg-pink-500 text-white text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all flex items-center justify-center gap-2">
                 <Download className="w-6 h-6" />
                 TẢI NGAY
               </button>
-              <button className="px-8 py-4 bg-white text-black text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
+              <a href="https://drive.google.com/file/d/1CgRlB1LaAJ3SLwWznCSQHivrpwMHvEVs/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-black text-xl font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
                 XEM DEMO
-              </button>
+              </a>
             </div>
           </div>
 
@@ -672,7 +654,7 @@ function Home() {
             </button>
 
             {/* Google Play Button */}
-            <button className="flex items-center gap-4 px-8 py-4 bg-white text-black text-lg font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
+            <a href="https://drive.google.com/file/d/11ZIQu7zOlOXXssflAVUbqPyksDmHWSKT/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Download on Google Play" className="flex items-center gap-4 px-8 py-4 bg-white text-black text-lg font-black border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
               <div className="w-8 h-8 flex items-center justify-center">
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
@@ -682,7 +664,7 @@ function Home() {
                 <div className="text-xs font-bold">GET IT ON</div>
                 <div className="text-lg font-black">Google Play</div>
               </div>
-            </button>
+            </a>
           </div>
         </div>
       </section>
